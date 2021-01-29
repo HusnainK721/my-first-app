@@ -5,8 +5,8 @@ import AllForm from "./Component/FormComponent/AllForm";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <MainBody />
+      {/* <Header />
+      <MainBody /> */}
       <AllForm />
     </div>
   );
