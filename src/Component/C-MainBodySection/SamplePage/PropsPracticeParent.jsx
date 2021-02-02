@@ -1,7 +1,10 @@
 import React from "react";
+import { PropsParcticeChild } from "./PropsParcticeChild";
 
-const PropsPracticeParent = () => {
-  return <div></div>;
+export const PropsPracticeParent = () => {
+  return (
+    <div>
+      <PropsParcticeChild />
+    </div>
+  );
 };
-
-export default PropsPracticeParent;
