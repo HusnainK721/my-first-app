@@ -1,10 +1,12 @@
 import React from "react";
 
-export const PropsParcticeChild = () => {
+export const PropsParcticeChild = (props) => {
   return (
     <div>
       <h1>What is props in React js??</h1>
-      <p>I am khwaja and i am 28 year old</p>
+      <p>
+        I am {props.name} and i am {props.age} year old
+      </p>
     </div>
   );
 };

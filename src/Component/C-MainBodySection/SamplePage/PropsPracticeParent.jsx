@@ -4,7 +4,7 @@ import { PropsParcticeChild } from "./PropsParcticeChild";
 export const PropsPracticeParent = () => {
   return (
     <div>
-      <PropsParcticeChild />
+      <PropsParcticeChild name="Khwaja Pasha" age="29" />
     </div>
   );
 };
