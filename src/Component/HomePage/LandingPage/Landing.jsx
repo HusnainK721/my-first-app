@@ -1,5 +1,10 @@
 import React from "react";
+import { PropsPracticeParent } from "../../C-MainBodySection/SamplePage/PropsPracticeParent";
 
 export const Landing = () => {
-  return <div></div>;
+  return (
+    <div>
+      <PropsPracticeParent />
+    </div>
+  );
 };
