@@ -1,7 +1,10 @@
 import React from "react";
+import { PropsPracticeParent } from "./SamplePage/PropsPracticeParent";
 
-const MainBodySection = () => {
-  return <div></div>;
+export const MainBodySection = () => {
+  return (
+    <div>
+      <PropsPracticeParent />
+    </div>
+  );
 };
-
-export default MainBodySection;

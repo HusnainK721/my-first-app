@@ -1,7 +1,5 @@
 import React from "react";
 
-const RightNavigationSection = () => {
+export const RightNavigationSection = () => {
   return <div></div>;
 };
-
-export default RightNavigationSection;
