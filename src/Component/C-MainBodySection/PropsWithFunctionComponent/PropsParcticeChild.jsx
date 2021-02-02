@@ -8,7 +8,7 @@ export const PropsParcticeChild = (props) => {
         <p>
           I am {props.brand} and i am {props.age} year old
         </p>
-        <p>I am {props.name} and i am year old</p>
+        <p>I am {props.children} and i am year old</p>
       </div>
     </React.Fragment>
   );
