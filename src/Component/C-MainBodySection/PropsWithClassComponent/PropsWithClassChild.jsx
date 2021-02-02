@@ -12,5 +12,3 @@ export class PropsWithClassChild extends Component {
     );
   }
 }
-
-// export default PropsWithClassChild;

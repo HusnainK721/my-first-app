@@ -10,5 +10,3 @@ export class PropsWithClassParent extends Component {
     );
   }
 }
-
-// export default PropsWithClassParent;
