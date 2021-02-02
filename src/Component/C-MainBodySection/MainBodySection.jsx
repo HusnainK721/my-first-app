@@ -1,5 +1,5 @@
 import React from "react";
-import { PropsPracticeParent } from "./SamplePage/PropsPracticeParent";
+import { PropsPracticeParent } from "./PropsWithFunctionComponent/PropsPracticeParent";
 
 export const MainBodySection = () => {
   return (
