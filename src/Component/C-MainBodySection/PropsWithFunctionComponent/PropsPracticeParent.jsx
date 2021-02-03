@@ -12,11 +12,7 @@ export const PropsPracticeParent = () => {
       <PropsParcticeChild anotherName={personName} /> */}
       <PropsParcticeChild brand={personName} />
       <PropsParcticeChild name="BillGates" />
-      <PropsParcticeChild>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio minus
-        illo ratione. Ut laudantium distinctio error nobis magnam ducimus eum,
-        officia vero ab esse numquam animi at possimus sit doloremque!
-      </PropsParcticeChild>
+      <PropsParcticeChild>This is children props</PropsParcticeChild>
       {/* <PropsParcticeChild name={name} age={age} /> */}
     </div>
   );
