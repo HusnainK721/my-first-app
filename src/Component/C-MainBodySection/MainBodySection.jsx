@@ -7,7 +7,6 @@ export const MainBodySection = () => {
     <div>
       {/* <PropsPracticeParent /> */}
       {/* <PropsWithClassParent /> */}
-      <PropsWithClassParent />
     </div>
   );
 };
