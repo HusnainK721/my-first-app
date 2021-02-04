@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-
+import { FormControl } from "react-bootstrap";
+import "./PropsWithClassComponent.css";
 export class PropsWithClassChild extends Component {
   render() {
     return (
       <div>
-        <h1>Props With Class Component</h1>
         <p>
           I am {this.props.name} i am {this.props.age} year old
         </p>
