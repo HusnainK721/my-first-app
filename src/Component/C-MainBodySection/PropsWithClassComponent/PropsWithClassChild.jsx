@@ -1,7 +1,12 @@
 import React, { Component } from "react";
-import { FormControl } from "react-bootstrap";
 import "./PropsWithClassComponent.css";
 export class PropsWithClassChild extends Component {
+  // state = {
+  //   person: [
+  //     { name: "Super Man", age: 35 },
+  //     { name: "Thor", age },
+  //   ],
+  // };
   render() {
     return (
       <div>
