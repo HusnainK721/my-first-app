@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./PropsWithClassComponent.css";
 export class PropsWithClassChild extends Component {
   render() {
     return (
