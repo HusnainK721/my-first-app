@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { PropsWithClassChild } from "./PropsWithClassChild";
 
 export class PropsWithClassParent extends Component {
+  // This is the state of component by default this state is loading
   state = {
     person: [
       { name: "Batman", age: 25 },
@@ -9,6 +10,7 @@ export class PropsWithClassParent extends Component {
       { name: "Captain America", age: 56 },
     ],
   };
+  // onClick of button it will execute & Changing the existing state to new state
   changeNameHandler = () => {
     this.setState({
       person: [
@@ -22,6 +24,7 @@ export class PropsWithClassParent extends Component {
     return (
       <div>
         <button onClick={this.changeNameHandler}>On Click Event</button>
+        {/* Passing state as props to child component */}
         <PropsWithClassChild
           name={this.state.person[0].name}
           age={this.state.person[0].age}
