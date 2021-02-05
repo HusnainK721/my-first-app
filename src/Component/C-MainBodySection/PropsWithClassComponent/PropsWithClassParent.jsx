@@ -4,14 +4,24 @@ import { PropsWithClassChild } from "./PropsWithClassChild";
 export class PropsWithClassParent extends Component {
   state = {
     person: [
-      { name: "Thor", age: 25 },
+      { name: "Batman", age: 25 },
       { name: "Superman", age: 30 },
-      { name: "Wonder Woman", age: 56 },
+      { name: "Captain America", age: 56 },
     ],
+  };
+  changeNameHandler = () => {
+    this.setState({
+      person: [
+        { name: "Bruce", age: 25 },
+        { name: "Clark", age: 30 },
+        { name: "Steve Rogers", age: 200 },
+      ],
+    });
   };
   render() {
     return (
       <div>
+        <button onClick={this.changeNameHandler}>On Click Event</button>
         <PropsWithClassChild
           name={this.state.person[0].name}
           age={this.state.person[0].age}
