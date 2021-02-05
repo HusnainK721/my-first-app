@@ -46,3 +46,6 @@ export const PropsWithFunctionParent = () => {
     </div>
   );
 };
+//  What is the major difference between class & functional component
+// In Class Component we can use state only once in component using (state keyword)
+// In functional component we can use state many time as we want using (useState hook)
