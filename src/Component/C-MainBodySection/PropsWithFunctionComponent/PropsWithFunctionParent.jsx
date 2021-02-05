@@ -9,7 +9,15 @@ export const PropsWithFunctionParent = () => {
       { name: "Zeeshan", age: 25 },
     ],
   });
-
+  const switchNameHandler = () => {
+    setPersonData({
+      person: [
+        { name: "Salman", age: 23 },
+        { name: "Khuddus", age: 24 },
+        { name: "Zeeshan", age: 25 },
+      ],
+    });
+  };
   return (
     <div>
       <PropsWithFunctionChild
