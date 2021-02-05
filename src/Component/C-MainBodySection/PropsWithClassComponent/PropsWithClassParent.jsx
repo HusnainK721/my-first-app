@@ -34,8 +34,8 @@ export class PropsWithClassParent extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.changeNameHandler}>Load detail of khwaja</button>
-        <button onClick={this.switchNameHandler}>Load detail of Tauseef</button>
+        <button onClick={this.changeNameHandler}>Change Name1</button>
+        <button onClick={this.switchNameHandler}>Change Name2</button>
         {/* Passing state as props to child component */}
         <PropsWithClassChild
           name={this.state.person[0].name}
