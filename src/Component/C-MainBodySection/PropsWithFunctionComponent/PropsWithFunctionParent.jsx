@@ -18,15 +18,15 @@ export const PropsWithFunctionParent = () => {
       ],
     });
   };
-  const changeNameHandler = () => {
-    setPersonData({
-      person: [
-        { name: " Salmaan Node js Developer", age: 23 },
-        { name: " Khuddus React Developer", age: 24 },
-        { name: "Zeeshan UI Developer", age: 25 },
-      ],
-    });
-  };
+  // const changeNameHandler = () => {
+  //   setPersonData({
+  //     person: [
+  //       { name: " Salmaan Node js Developer", age: 23 },
+  //       { name: " Khuddus React Developer", age: 24 },
+  //       { name: "Zeeshan UI Developer", age: 25 },
+  //     ],
+  //   });
+  // };
   return (
     <div>
       <PropsWithFunctionChild
