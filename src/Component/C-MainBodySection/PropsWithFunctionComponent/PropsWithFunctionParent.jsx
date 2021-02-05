@@ -24,7 +24,7 @@ export const PropsWithFunctionParent = () => {
         name={personData.person[2].name}
         age={personData.person[2].age}
       />
-      <button>Click TO Change State</button>
+      <button onClick={switchNameHandler}>Click TO Change State</button>
     </div>
   );
 };
