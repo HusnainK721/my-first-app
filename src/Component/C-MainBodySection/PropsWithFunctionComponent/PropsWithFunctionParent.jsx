@@ -18,6 +18,15 @@ export const PropsWithFunctionParent = () => {
       ],
     });
   };
+  const changeNameHandler = () => {
+    setPersonData({
+      person: [
+        { name: " Salmaan Node js Developer", age: 23 },
+        { name: " Khuddus React Developer", age: 24 },
+        { name: "Zeeshan UI Developer", age: 25 },
+      ],
+    });
+  };
   return (
     <div>
       <PropsWithFunctionChild
@@ -32,7 +41,8 @@ export const PropsWithFunctionParent = () => {
         name={personData.person[2].name}
         age={personData.person[2].age}
       />
-      <button onClick={switchNameHandler}>Click TO Change State</button>
+      <button onClick={switchNameHandler}>Click TO Change State 1</button>
+      <button onClick={changeNameHandler}>Click TO Change State 2</button>
     </div>
   );
 };
