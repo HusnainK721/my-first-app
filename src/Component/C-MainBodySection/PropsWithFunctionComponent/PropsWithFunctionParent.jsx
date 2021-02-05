@@ -9,11 +9,11 @@ export const PropsWithFunctionParent = () => {
       { name: "Zeeshan", age: 25 },
     ],
   });
-  const switchNameHandler = () => {
+  const switchNameHandler = (newName1, newName2) => {
     setPersonData({
       person: [
-        { name: "Nodejs Dev", age: 23 },
-        { name: "Khuddus", age: 24 },
+        { name: newName1, age: 23 },
+        { name: newName2, age: 24 },
         { name: "Zeeshan", age: 25 },
       ],
     });
@@ -42,7 +42,9 @@ export const PropsWithFunctionParent = () => {
         age={personData.person[2].age}
         clicked={switchNameHandler}
       />
-      <button onClick={switchNameHandler}>Click TO Change State 1</button>
+      <button onClick={() => switchNameHandler("Ayesha Kashaf", "zainab")}>
+        Click TO Change State 1
+      </button>
       {/* <button onClick={changeNameHandler}>Click TO Change State 2</button> */}
     </div>
   );
