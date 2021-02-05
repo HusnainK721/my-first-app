@@ -12,9 +12,9 @@ export const PropsWithFunctionParent = () => {
   const switchNameHandler = () => {
     setPersonData({
       person: [
-        { name: "Salman", age: 23 },
-        { name: "Khuddus", age: 24 },
-        { name: "Zeeshan", age: 25 },
+        { name: "Node js Developer", age: 23 },
+        { name: "React Developer", age: 24 },
+        { name: "UI Developer", age: 25 },
       ],
     });
   };
