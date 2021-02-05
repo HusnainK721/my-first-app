@@ -13,8 +13,8 @@ export const PropsWithFunctionParent = () => {
     setPersonData({
       person: [
         { name: "Nodejs Dev", age: 23 },
-        // { name: "React Developer", age: 24 },
-        // { name: "UI Developer", age: 25 },
+        { name: "Khuddus", age: 24 },
+        { name: "Zeeshan", age: 25 },
       ],
     });
   };
@@ -38,8 +38,8 @@ export const PropsWithFunctionParent = () => {
         age={personData.person[1].age}
       />
       <PropsWithFunctionChild
-        name={personData.person[0].name}
-        age={personData.person[0].age}
+        name={personData.person[2].name}
+        age={personData.person[2].age}
         clicked={switchNameHandler}
       />
       <button onClick={switchNameHandler}>Click TO Change State 1</button>
