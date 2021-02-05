@@ -5,7 +5,7 @@ export const PropsWithFunctionChild = (props) => {
     <React.Fragment>
       <div>
         <p>
-          I am {props.brand} and i am {props.age} year old
+          I am {props.name} and i am {props.age} year old
         </p>
       </div>
     </React.Fragment>
