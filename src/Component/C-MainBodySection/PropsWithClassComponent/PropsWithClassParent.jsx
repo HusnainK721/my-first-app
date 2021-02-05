@@ -12,15 +12,15 @@ export class PropsWithClassParent extends Component {
   };
 
   // onClick of button it will execute & Changing the existing state to new state
-  // changeNameHandler = () => {
-  //   this.setState({
-  //     person: [
-  //       { name: "Bruce", age: 25 },
-  //       { name: "Clark", age: 30 },
-  //       { name: "Steve Rogers", age: 200 },
-  //     ],
-  //   });
-  // };
+  changeNameHandler = () => {
+    this.setState({
+      person: [
+        { name: "Bruce", age: 25 },
+        { name: "Clark", age: 30 },
+        { name: "Steve Rogers", age: 200 },
+      ],
+    });
+  };
   switchNameHandler = () => {
     this.setState({
       person: [
@@ -34,6 +34,7 @@ export class PropsWithClassParent extends Component {
   render() {
     return (
       <div>
+        <button onClick={this.changeNameHandler}>On Click Event</button>
         <button onClick={this.switchNameHandler}>On Click Event</button>
         {/* Passing state as props to child component */}
         <PropsWithClassChild
