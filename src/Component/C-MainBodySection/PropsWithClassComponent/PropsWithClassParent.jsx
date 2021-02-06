@@ -21,21 +21,22 @@ export class PropsWithClassParent extends Component {
       ],
     });
   };
-  switchNameHandler = () => {
-    this.setState({
-      person: [
-        { name: "Iron Man", age: 25 },
-        { name: "Spider Man", age: 22 },
-        { name: "Hulk", age: 35 },
-      ],
-    });
-  };
+  // switchNameHandler = () => {
+  //   this.setState({
+  //     person: [
+  //       { name: "Iron Man", age: 25 },
+  //       { name: "Spider Man", age: 22 },
+  //       { name: "Hulk", age: 35 },
+  //     ],
+  //   });
+  // };
 
   render() {
     return (
       <div>
+        {/* <button onClick={this.changeNameHandler.bind(this, "Khwaja")}> */}
         <button onClick={this.changeNameHandler}>Change Name1</button>
-        <button onClick={this.switchNameHandler}>Change Name2</button>
+        {/* <button onClick={this.switchNameHandler}>Change Name2</button> */}
         {/* Passing state as props to child component */}
         <PropsWithClassChild
           name={this.state.person[0].name}
@@ -48,6 +49,7 @@ export class PropsWithClassParent extends Component {
         <PropsWithClassChild
           name={this.state.person[2].name}
           age={this.state.person[2].age}
+          kuchbi={this.changeNameHandler}
         />
       </div>
     );

@@ -7,7 +7,7 @@ export const PropsWithFunctionChild = (props) => {
         <p onClick={props.clicked}>
           I am {props.name} and i am {props.age} year old
         </p>
-        <input type="text" onChange={props.change} />
+        {/* <input type="text" onChange={props.change} /> */}
       </div>
     </React.Fragment>
   );
