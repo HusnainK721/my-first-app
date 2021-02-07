@@ -2,6 +2,17 @@ import React, { Component } from "react";
 
 export class ListAndConditionalClassChild extends Component {
   render() {
-    return <div></div>;
+    return (
+      <div>
+        <p onClick={this.props.clicked}>
+          I am {this.props.name} i am {this.props.age} year old
+        </p>
+        <input
+          type="text"
+          onChange={this.props.change}
+          value={this.props.name}
+        />
+      </div>
+    );
   }
 }
