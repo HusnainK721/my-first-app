@@ -17,10 +17,20 @@ export class PropsWithClassParent extends Component {
       person: [
         { name: "Bruce", age: 25 },
         { name: "Clark", age: 30 },
-        { name: "Steve Rogers", age: 200 },
+        { name: "sunil", age: 20 },
       ],
     });
   };
+  changeNameHandler1 = (e) => {
+    this.setState({
+      person: [
+        { name: e.target.value, age: 25 },
+        { name: "Clark", age: 30 },
+        { name: "Steve", age: 20 },
+      ],
+    });
+  };
+
   // switchNameHandler = () => {
   //   this.setState({
   //     person: [
@@ -49,7 +59,8 @@ export class PropsWithClassParent extends Component {
         <PropsWithClassChild
           name={this.state.person[2].name}
           age={this.state.person[2].age}
-          kuchbi={this.changeNameHandler}
+          clicked={this.changeNameHandler}
+          change={this.changeNameHandler1}
         />
       </div>
     );
