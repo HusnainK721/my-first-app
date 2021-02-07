@@ -10,12 +10,22 @@ export const ListAndConditionalFunctionalParent = () => {
       { name: "Zeeshan", age: 25 },
     ],
   });
-  const changeNameHandler = () => {
+  // this is switch name handler
+  const switchNameHandler = () => {
     setPersonData({
       person: [
         { name: "Node", age: 23 },
         { name: "Backend", age: 24 },
         { name: "UI", age: 25 },
+      ],
+    });
+  };
+  const changeNameHandler = (e) => {
+    setPersonData({
+      person: [
+        { name: "UI", age: 23 },
+        { name: "Backend", age: 24 },
+        { name: e.target.value, age: 25 },
       ],
     });
   };
@@ -38,9 +48,9 @@ export const ListAndConditionalFunctionalParent = () => {
           <ListAndConditionalFunctionalChild
             name={personData.person[2].name}
             age={personData.person[2].age}
-            // change={changeNameHandler}
+            change={changeNameHandler}
           />
-          <button onClick={changeNameHandler}>Click TO Change State 2</button>
+          <button onClick={switchNameHandler}>Click TO Change State 2</button>
         </div>
       ) : null}
     </div>
