@@ -9,12 +9,6 @@ export class ListAndConditionalClassParent extends Component {
       { name: "Captain America", age: 56 },
     ],
   };
-  showPerson = false;
-
-  toggleNamePersonHandler = () => {
-    const doesShow = this.state.showPerson;
-    this.setState({ showPerson: !doesShow });
-  };
 
   // onClick of button it will execute & Changing the existing state to new state
 
@@ -27,7 +21,12 @@ export class ListAndConditionalClassParent extends Component {
       ],
     });
   };
+  showPerson = false;
 
+  toggleNamePersonHandler = () => {
+    const doesShow = this.state.showPerson;
+    this.setState({ showPerson: !doesShow });
+  };
   render() {
     let person = null;
     if (this.state.showPerson) {
