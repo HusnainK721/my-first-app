@@ -20,39 +20,47 @@ export const ListAndConditionalFunctionalParent = () => {
       ],
     });
   };
-  const changeNameHandler = (e) => {
-    setPersonData({
-      person: [
-        { name: "UI", age: 23 },
-        { name: "Backend", age: 24 },
-        { name: e.target.value, age: 25 },
-      ],
-    });
-  };
+  // const changeNameHandler = (e) => {
+  //   setPersonData({
+  //     person: [
+  //       { name: "UI", age: 23 },
+  //       { name: "Backend", age: 24 },
+  //       { name: e.target.value, age: 25 },
+  //     ],
+  //   });
+  // };
   const togglePersonHandler = () => {
     setShowPerson(!showPerson);
   };
+  let person = null;
+  if (showPerson) {
+    person = (
+      <div>
+        <ListAndConditionalFunctionalChild
+          name={personData.person[0].name}
+          age={personData.person[0].age}
+        />
+        <ListAndConditionalFunctionalChild
+          name={personData.person[1].name}
+          age={personData.person[1].age}
+        />
+        <ListAndConditionalFunctionalChild
+          name={personData.person[2].name}
+          age={personData.person[2].age}
+          // change={changeNameHandler}
+        />
+        <button onClick={switchNameHandler}>Click TO Change State 2</button>
+      </div>
+    );
+  }
+  console.log("------------?", person);
   return (
     <div>
       <button onClick={togglePersonHandler}>Click TO Change State 1</button>
-      {showPerson ? (
-        <div>
-          <ListAndConditionalFunctionalChild
-            name={personData.person[0].name}
-            age={personData.person[0].age}
-          />
-          <ListAndConditionalFunctionalChild
-            name={personData.person[1].name}
-            age={personData.person[1].age}
-          />
-          <ListAndConditionalFunctionalChild
-            name={personData.person[2].name}
-            age={personData.person[2].age}
-            change={changeNameHandler}
-          />
-          <button onClick={switchNameHandler}>Click TO Change State 2</button>
-        </div>
-      ) : null}
+      {/* {showPerson ? (
+        
+      ) : null} */}
+      {person}
     </div>
   );
 };
