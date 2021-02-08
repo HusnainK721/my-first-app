@@ -10,6 +10,7 @@ export class ListAndConditionalClassParent extends Component {
     ],
   };
   showPerson = false;
+
   toggleNamePersonHandler = () => {
     const doesShow = this.state.showPerson;
     this.setState({ showPerson: !doesShow });
@@ -28,27 +29,31 @@ export class ListAndConditionalClassParent extends Component {
   };
 
   render() {
+    let person = null;
+    if (this.state.showPerson) {
+      person = (
+        <div>
+          <ListAndConditionalClassChild
+            name={this.state.person[0].name}
+            age={this.state.person[0].age}
+          />
+          <ListAndConditionalClassChild
+            name={this.state.person[1].name}
+            age={this.state.person[1].age}
+          />
+          <ListAndConditionalClassChild
+            name={this.state.person[2].name}
+            age={this.state.person[2].age}
+            clicked={this.changeNameHandler}
+            change={this.changeNameHandler1}
+          />
+        </div>
+      );
+    }
     return (
       <div>
         <button onClick={this.toggleNamePersonHandler}>Change Name1</button>
-        {this.state.showPerson ? (
-          <div>
-            <ListAndConditionalClassChild
-              name={this.state.person[0].name}
-              age={this.state.person[0].age}
-            />
-            <ListAndConditionalClassChild
-              name={this.state.person[1].name}
-              age={this.state.person[1].age}
-            />
-            <ListAndConditionalClassChild
-              name={this.state.person[2].name}
-              age={this.state.person[2].age}
-              clicked={this.changeNameHandler}
-              change={this.changeNameHandler1}
-            />
-          </div>
-        ) : null}
+        {person}
       </div>
     );
   }
