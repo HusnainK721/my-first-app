@@ -63,6 +63,7 @@ import { ToggleButton } from "react-bootstrap";
 
 export const ListAndConditionalFunctionalParent = () => {
   const [show, setShow] = useState(false);
+  const [personData, setPersonData] = useState({});
   const TogglePersonHandler = () => {};
   return (
     <div>
