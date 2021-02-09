@@ -8,17 +8,17 @@ export const Module4ListAndConditional = () => {
   return (
     <div>
       <Row>
-        <Col>
+        <Col xs={12}>
           <div>
-            <p> Module 4 By Using Class Component</p>
+            <h4> Module 4 By Using Class Component</h4>
             <RenderingContentConditionllyParent />
             <RenderingInJsWayParent />
           </div>
         </Col>
 
-        <Col>
+        <Col xs={12}>
           <div>
-            <p>Module 4 by Using Functional Component</p>
+            <h4>Module 4 by Using Functional Component</h4>
             <ConditionalRenderingParentInFunc />
             <ConditionalRenderingParentInJSWayFunc />
           </div>
