@@ -12,9 +12,25 @@ export class DeletingStateParentC extends Component {
     ],
   };
   showPerson;
-  switchNameHandler = () => {
+  toggleNameHandler = () => {
     const isShow = this.state.showPerson;
     this.setState({ showPerson: !isShow });
+  };
+  switchNameHandler = () => {
+    this.setState({
+      person: [
+        { name: "khwaja Muhammad", age: 27 },
+        { name: "Junaid Lala", age: 28 },
+        { name: "Dilshad Khan", age: 29 },
+        { name: "Sulaiman Chause", age: 30 },
+        { name: "Saleem Shaikh", age: 31 },
+      ],
+    });
+  };
+  deleteStateHandler = (personDataIndex) => {
+    const personData = this.state.person;
+    personData.splice(personDataIndex, 1);
+    this.setState({ personData: personData });
   };
   render() {
     let displayPersonData = null;
@@ -26,18 +42,20 @@ export class DeletingStateParentC extends Component {
               <DeletingStateChildC
                 name={item.name}
                 age={item.age}
-                // delete={this.deleteStateHandler(index)}
+                delete={() => this.deleteStateHandler(index)}
               />
             );
           })}
-          <button>Change State</button>
+          <button onClick={this.switchNameHandler} className="mt-2">
+            Change State
+          </button>
         </div>
       );
     }
     return (
       <div>
-        <p> 3.Deleting State onClick Of Button</p>
-        <button onClick={this.switchNameHandler}>Toggle Data</button>
+        <p className="mt-2"> 3.Deleting State onClick Of Button</p>
+        <button onClick={this.toggleNameHandler}>Toggle & Delete Data</button>
         {displayPersonData}
       </div>
     );
