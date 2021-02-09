@@ -39,7 +39,7 @@ export class OutputtingListDynamicallyParentC extends Component {
   render() {
     return (
       <div>
-        <p>1. Conditional Rendering</p>
+        <p className="mt-2">2. Conditional Rendering & .Map Function </p>
         <button onClick={this.toggleNamePersonHandler}>
           Loading Dynamic Data using Map
         </button>
