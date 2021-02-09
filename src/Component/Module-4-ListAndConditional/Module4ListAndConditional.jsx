@@ -2,8 +2,8 @@ import React from "react";
 import { RenderingContentConditionllyParent } from "./ListAndConditionalClass/A-RenderingContentConditionally/RenderingContentConditionllyParent";
 import { RenderingInJsWayParent } from "./ListAndConditionalClass/B-RenderingContentConditionally-js-way/RenderingInJsWayParent";
 import { Row, Col } from "react-bootstrap";
-import { ConditionalRenderingParentInFunc } from "./ListAndConditionalFunctional/ConditionalRendering/ConditionalRenderingParentInFunc";
-import { ConditionalRenderingParentInJSWayFunc } from "./ListAndConditionalFunctional/ConditionalRenderingInJSWayInFunc/ConditionalRenderingParentInJSWayFunc";
+import { ConditionalRenderingParentInFunc } from "./ListAndConditionalFunctional/A-ConditionalRendering/ConditionalRenderingParentInFunc";
+import { ConditionalRenderingParentInJSWayFunc } from "./ListAndConditionalFunctional/B-ConditionalRenderingInJSWayInFunc/ConditionalRenderingParentInJSWayFunc";
 import { OutputtingListDynamicallyParentC } from "./ListAndConditionalClass/C-OutputtingListDynamicallyC/OutputtingListDynamicallyParentC";
 export const Module4ListAndConditional = () => {
   return (
