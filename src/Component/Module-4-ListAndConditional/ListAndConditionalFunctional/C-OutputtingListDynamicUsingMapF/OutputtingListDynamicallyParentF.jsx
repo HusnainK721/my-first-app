@@ -9,10 +9,21 @@ export const OutputtingListDynamicallyParentF = () => {
       { name: "Kashaf", age: 4 },
     ],
   });
+  const handleNameChange = () => {
+    setPersonData({
+      person: [
+        { name: "Muhammad Khwaja", age: 28 },
+        { name: "Roman Khan", age: 28 },
+        { name: "Ayesha Kashaf", age: 28 },
+      ],
+    });
+  };
   return (
     <div>
       <p className="mt-2">2. Dynmaic Loading Data & Conditional Rendering</p>
-      <button>Loading Dynamic Data Using .Map() </button>
+      <button onClick={handleNameChange}>
+        Loading Dynamic Data Using .Map(){" "}
+      </button>
       {PersonData.person.map((itemCurrent) => {
         return (
           <OutputtingListDynamicallyChildF
