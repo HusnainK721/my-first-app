@@ -6,6 +6,8 @@ import { ConditionalRenderingParentInFunc } from "./ListAndConditionalFunctional
 import { ConditionalRenderingParentInJSWayFunc } from "./ListAndConditionalFunctional/B-ConditionalRenderingInJSWayInFunc/ConditionalRenderingParentInJSWayFunc";
 import { OutputtingListDynamicallyParentC } from "./ListAndConditionalClass/C-OutputtingListDynamicallyC/OutputtingListDynamicallyParentC";
 import { OutputtingListDynamicallyParentF } from "./ListAndConditionalFunctional/C-OutputtingListDynamicUsingMapF/OutputtingListDynamicallyParentF";
+import { DeletingStateParentC } from "./ListAndConditionalClass/D-DeletingState/DeletingStateParentC";
+
 export const Module4ListAndConditional = () => {
   return (
     <div>
@@ -16,6 +18,7 @@ export const Module4ListAndConditional = () => {
             <RenderingContentConditionllyParent />
             <RenderingInJsWayParent />
             <OutputtingListDynamicallyParentC />
+            <DeletingStateParentC />
           </div>
         </Col>
 

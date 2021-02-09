@@ -4,7 +4,9 @@ export class DeletingStateChildC extends Component {
   render() {
     return (
       <div>
-        <p>hiiiiiiiiiiiii</p>
+        <p>
+          This is {this.props.name} i am {this.props.age} year old
+        </p>
       </div>
     );
   }
