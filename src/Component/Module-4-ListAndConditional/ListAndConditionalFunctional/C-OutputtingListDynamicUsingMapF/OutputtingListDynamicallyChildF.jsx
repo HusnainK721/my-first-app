@@ -1,7 +1,11 @@
 import React from "react";
 
 export const OutputtingListDynamicallyChildF = () => {
-  return <div></div>;
+  return (
+    <div>
+      <h1>hiiiiii</h1>
+    </div>
+  );
 };
 
 export default OutputtingListDynamicallyChildF;
