@@ -50,6 +50,7 @@ export class RenderingInJsWayParent extends Component {
     }
     return (
       <div className="mt-2">
+        <p>Conditional Rendering</p>
         <button onClick={this.toggleNamePersonHandler}>
           Conditional Rendering In js Way
         </button>
