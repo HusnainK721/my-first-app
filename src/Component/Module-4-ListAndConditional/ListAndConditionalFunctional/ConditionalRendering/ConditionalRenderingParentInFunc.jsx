@@ -34,6 +34,7 @@ export const ConditionalRenderingParentInFunc = () => {
 
   return (
     <div>
+      <p>1. Conditional Rendering</p>
       <button onClick={togglePersonHandler}>Conditional Rendering</button>
 
       {showPerson ? (

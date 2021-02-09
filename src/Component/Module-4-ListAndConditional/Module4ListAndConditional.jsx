@@ -1,9 +1,10 @@
 import React from "react";
-import { RenderingContentConditionllyParent } from "./ListAndConditionalClass/RenderingContentConditionally/RenderingContentConditionllyParent";
-import { RenderingInJsWayParent } from "./ListAndConditionalClass/RenderingContentConditionally-js-way/RenderingInJsWayParent";
+import { RenderingContentConditionllyParent } from "./ListAndConditionalClass/A-RenderingContentConditionally/RenderingContentConditionllyParent";
+import { RenderingInJsWayParent } from "./ListAndConditionalClass/B-RenderingContentConditionally-js-way/RenderingInJsWayParent";
 import { Row, Col } from "react-bootstrap";
 import { ConditionalRenderingParentInFunc } from "./ListAndConditionalFunctional/ConditionalRendering/ConditionalRenderingParentInFunc";
 import { ConditionalRenderingParentInJSWayFunc } from "./ListAndConditionalFunctional/ConditionalRenderingInJSWayInFunc/ConditionalRenderingParentInJSWayFunc";
+import { OutputtingListDynamicallyParentC } from "./ListAndConditionalClass/C-OutputtingListDynamicallyC/OutputtingListDynamicallyParentC";
 export const Module4ListAndConditional = () => {
   return (
     <div>
@@ -13,6 +14,7 @@ export const Module4ListAndConditional = () => {
             <h4> Module 4 By Using Class Component</h4>
             <RenderingContentConditionllyParent />
             <RenderingInJsWayParent />
+            <OutputtingListDynamicallyParentC />
           </div>
         </Col>
 

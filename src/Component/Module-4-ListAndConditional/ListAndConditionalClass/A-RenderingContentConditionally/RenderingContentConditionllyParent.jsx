@@ -30,6 +30,7 @@ export class RenderingContentConditionllyParent extends Component {
   render() {
     return (
       <div>
+        <p>1. Conditional Rendering</p>
         <button onClick={this.toggleNamePersonHandler}>
           Conditional Rendering
         </button>
