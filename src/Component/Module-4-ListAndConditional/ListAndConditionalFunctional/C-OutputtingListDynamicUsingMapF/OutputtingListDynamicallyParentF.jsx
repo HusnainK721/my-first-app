@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { OutputtingListDynamicallyChildF } from "./OutputtingListDynamicallyChildF";
 
 export const OutputtingListDynamicallyParentF = () => {
+  const [ShowPersonData, setShowPersonData] = useState(false);
   const [PersonData, setPersonData] = useState({
     person: [
       { name: "Khwaja", age: 27 },
@@ -18,20 +19,28 @@ export const OutputtingListDynamicallyParentF = () => {
       ],
     });
   };
+  const handleConditionalRendering = () => {
+    setShowPersonData(!ShowPersonData);
+  };
   return (
     <div>
       <p className="mt-2">2. Dynmaic Loading Data & Conditional Rendering</p>
-      <button onClick={handleNameChange}>
-        Loading Dynamic Data Using .Map(){" "}
+      <button onClick={handleConditionalRendering}>
+        Loading Dynamic Data Using .Map()
       </button>
-      {PersonData.person.map((itemCurrent) => {
-        return (
-          <OutputtingListDynamicallyChildF
-            name={itemCurrent.name}
-            age={itemCurrent.age}
-          />
-        );
-      })}
+      {ShowPersonData ? (
+        <div>
+          {PersonData.person.map((itemCurrent) => {
+            return (
+              <OutputtingListDynamicallyChildF
+                name={itemCurrent.name}
+                age={itemCurrent.age}
+              />
+            );
+          })}
+          <button onClick={handleNameChange}> Change State</button>
+        </div>
+      ) : null}
     </div>
   );
 };
