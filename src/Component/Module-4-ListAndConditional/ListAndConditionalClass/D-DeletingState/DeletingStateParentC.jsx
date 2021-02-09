@@ -11,16 +11,34 @@ export class DeletingStateParentC extends Component {
       { name: "Saleem", age: 31 },
     ],
   };
+  showPerson;
+  switchNameHandler = () => {
+    const isShow = this.state.showPerson;
+    this.setState({ showPerson: !isShow });
+  };
   render() {
+    let displayPersonData = null;
+    if (this.state.showPerson) {
+      displayPersonData = (
+        <div>
+          {this.state.person.map((item, index) => {
+            return (
+              <DeletingStateChildC
+                name={item.name}
+                age={item.age}
+                // delete={this.deleteStateHandler(index)}
+              />
+            );
+          })}
+          <button>Change State</button>
+        </div>
+      );
+    }
     return (
       <div>
         <p> 3.Deleting State onClick Of Button</p>
-        <button></button>
-        <div>
-          {this.state.person.map((item) => {
-            return <DeletingStateChildC name={item.name} age={item.age} />;
-          })}
-        </div>
+        <button onClick={this.switchNameHandler}>Toggle Data</button>
+        {displayPersonData}
       </div>
     );
   }
