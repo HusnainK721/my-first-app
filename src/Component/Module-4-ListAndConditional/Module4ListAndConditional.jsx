@@ -5,9 +5,11 @@ import { RenderingInJsWayParent } from "./ListAndConditionalClass/RenderingConte
 export const Module4ListAndConditional = () => {
   return (
     <div>
-      <h1>By Using Class Component</h1>
-      <RenderingContentConditionllyParent />
-      <RenderingInJsWayParent />
+      <div>
+        <h1>By Using Class Component</h1>
+        <RenderingContentConditionllyParent />
+        <RenderingInJsWayParent />
+      </div>
     </div>
   );
 };

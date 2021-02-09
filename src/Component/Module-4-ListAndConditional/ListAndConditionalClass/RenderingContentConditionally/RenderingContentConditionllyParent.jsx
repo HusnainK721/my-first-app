@@ -28,33 +28,29 @@ export class RenderingContentConditionllyParent extends Component {
     this.setState({ showPerson: !doesShow });
   };
   render() {
-    let person = null;
-    if (this.state.showPerson) {
-      person = (
-        <div>
-          <RenderingContentConditionllyChild
-            name={this.state.person[0].name}
-            age={this.state.person[0].age}
-          />
-          <RenderingContentConditionllyChild
-            name={this.state.person[1].name}
-            age={this.state.person[1].age}
-          />
-          <RenderingContentConditionllyChild
-            name={this.state.person[2].name}
-            age={this.state.person[2].age}
-            clicked={this.changeNameHandler}
-            change={this.changeNameHandler1}
-          />
-        </div>
-      );
-    }
     return (
       <div>
         <button onClick={this.toggleNamePersonHandler}>
           Conditional Rendering
         </button>
-        {person}
+        {this.showPerson ? (
+          <div>
+            <RenderingContentConditionllyChild
+              name={this.state.person[0].name}
+              age={this.state.person[0].age}
+            />
+            <RenderingContentConditionllyChild
+              name={this.state.person[1].name}
+              age={this.state.person[1].age}
+            />
+            <RenderingContentConditionllyChild
+              name={this.state.person[2].name}
+              age={this.state.person[2].age}
+              clicked={this.changeNameHandler}
+              change={this.changeNameHandler1}
+            />
+          </div>
+        ) : null}
       </div>
     );
   }
