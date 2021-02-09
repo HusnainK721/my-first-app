@@ -4,8 +4,9 @@ import React from "react";
 // import { MainBodySection } from "../../C-MainBodySection/MainBodySection";
 // import { RightNavigationSection } from "../../D-RightNavigationSection/RightNavigationSection";
 // import { FooterSection } from "../../E-FooterSection/FooterSection";
-import { ListAndConditionalClassParent } from "../../ListAndConditional/ListAndConditionalClass/ListAndConditionalClassParent";
-import { ListAndConditionalFunctionalParent } from "../../ListAndConditional/ListAndConditionalFunctional/ListAndConditionalFunctionalParent";
+// import { ListAndConditionalClassParent } from "../../ListAndConditional/ListAndConditionalClass/ListAndConditionalClassParent";
+// import { ListAndConditionalFunctionalParent } from "../../ListAndConditional/ListAndConditionalFunctional/ListAndConditionalFunctionalParent";
+import { Module4ListAndConditional } from "../../Module-4-ListAndConditional/Module4ListAndConditional";
 export const Landing = () => {
   return (
     <React.Fragment>
@@ -17,8 +18,7 @@ export const Landing = () => {
         <FooterSection />
       </div> */}
       <div>
-        <ListAndConditionalClassParent />
-        <ListAndConditionalFunctionalParent />
+        <Module4ListAndConditional />
       </div>
     </React.Fragment>
   );

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { ListAndConditionalClassChild } from "./ListAndConditionalClassChild";
-
-export class ListAndConditionalClassParent extends Component {
+import { RenderingInJsWayChild } from "./RenderingInJsWayChild";
+export class RenderingInJsWayParent extends Component {
   state = {
     person: [
       { name: "Batman", age: 25 },
@@ -32,15 +31,15 @@ export class ListAndConditionalClassParent extends Component {
     if (this.state.showPerson) {
       person = (
         <div>
-          <ListAndConditionalClassChild
+          <RenderingInJsWayChild
             name={this.state.person[0].name}
             age={this.state.person[0].age}
           />
-          <ListAndConditionalClassChild
+          <RenderingInJsWayChild
             name={this.state.person[1].name}
             age={this.state.person[1].age}
           />
-          <ListAndConditionalClassChild
+          <RenderingInJsWayChild
             name={this.state.person[2].name}
             age={this.state.person[2].age}
             clicked={this.changeNameHandler}

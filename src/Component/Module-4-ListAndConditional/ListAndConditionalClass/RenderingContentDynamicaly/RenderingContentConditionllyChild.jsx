@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export class ListAndConditionalClassChild extends Component {
+export class RenderingContentConditionllyChild extends Component {
   render() {
     return (
       <div>
