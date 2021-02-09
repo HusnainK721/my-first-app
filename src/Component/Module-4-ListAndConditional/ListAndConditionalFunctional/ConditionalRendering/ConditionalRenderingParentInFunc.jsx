@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-
-export const ConditionalRenderingInJSWayParentInFunc = () => {
+import { ConditionalRenderingChildInFunc } from "./ConditionalRenderingChildInFunc";
+export const ConditionalRenderingParentInFunc = () => {
   const [showPerson, setShowPerson] = useState(false);
   const [personData, setPersonData] = useState({
     person: [
@@ -34,7 +34,7 @@ export const ConditionalRenderingInJSWayParentInFunc = () => {
 
   return (
     <div>
-      <button onClick={togglePersonHandler}>Click TO Change State 1</button>
+      <button onClick={togglePersonHandler}>Conditional Rendering</button>
 
       {showPerson ? (
         <div>

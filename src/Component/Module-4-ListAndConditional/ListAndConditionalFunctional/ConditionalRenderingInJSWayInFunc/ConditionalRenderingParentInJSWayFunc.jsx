@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ConditionalRenderingChildInJsWayFunc } from "./ConditionalRenderingChildInJSWayFunc";
 
-export const ConditionalRenderingParentInFunc = () => {
+export const ConditionalRenderingParentInJSWayFunc = () => {
   const [showPerson, setShowPerson] = useState(false);
   const [personData, setPersonData] = useState({
     person: [
@@ -49,13 +49,15 @@ export const ConditionalRenderingParentInFunc = () => {
           age={personData.person[2].age}
           change={changeNameHandler}
         />
-        <button onClick={switchNameHandler}>Click TO Change State 2</button>
+        <button onClick={switchNameHandler}>change local state</button>
       </div>
     );
   }
   return (
     <div>
-      <button onClick={togglePersonHandler}>Click TO Change State 1</button>
+      <button onClick={togglePersonHandler} className="mt-2">
+        Conditional Rendering in JS way
+      </button>
 
       {person}
     </div>
