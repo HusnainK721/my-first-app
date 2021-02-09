@@ -53,7 +53,6 @@ export const ListAndConditionalFunctionalParent = () => {
       </div>
     );
   }
-  console.log("------------?", person);
   return (
     <div>
       <button onClick={togglePersonHandler}>Click TO Change State 1</button>
