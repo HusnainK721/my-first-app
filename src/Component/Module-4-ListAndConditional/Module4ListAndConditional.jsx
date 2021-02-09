@@ -5,6 +5,7 @@ import { Row, Col } from "react-bootstrap";
 import { ConditionalRenderingParentInFunc } from "./ListAndConditionalFunctional/A-ConditionalRendering/ConditionalRenderingParentInFunc";
 import { ConditionalRenderingParentInJSWayFunc } from "./ListAndConditionalFunctional/B-ConditionalRenderingInJSWayInFunc/ConditionalRenderingParentInJSWayFunc";
 import { OutputtingListDynamicallyParentC } from "./ListAndConditionalClass/C-OutputtingListDynamicallyC/OutputtingListDynamicallyParentC";
+import { OutputtingListDynamicallyParentF } from "./ListAndConditionalFunctional/C-OutputtingListDynamicUsingMapF/OutputtingListDynamicallyParentF";
 export const Module4ListAndConditional = () => {
   return (
     <div>
@@ -23,6 +24,7 @@ export const Module4ListAndConditional = () => {
             <h4>Module 4 by Using Functional Component</h4>
             <ConditionalRenderingParentInFunc />
             <ConditionalRenderingParentInJSWayFunc />
+            <OutputtingListDynamicallyParentF />
           </div>
         </Col>
       </Row>
