@@ -7,5 +7,3 @@ export const OutputtingListDynamicallyChildF = () => {
     </div>
   );
 };
-
-export default OutputtingListDynamicallyChildF;
