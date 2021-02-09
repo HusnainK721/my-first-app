@@ -1,9 +1,11 @@
 import React from "react";
 
-export const OutputtingListDynamicallyChildF = () => {
+export const OutputtingListDynamicallyChildF = (props) => {
   return (
     <div>
-      <h1>hiiiiii</h1>
+      <p>
+        This is {props.name} i am {props.age} year old
+      </p>
     </div>
   );
 };
