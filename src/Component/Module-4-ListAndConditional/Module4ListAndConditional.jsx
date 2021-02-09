@@ -1,9 +1,12 @@
 import React from "react";
-import { RenderingInJsWayParent } from "./ListAndConditionalClass/RenderingContentDynamicIn-js-way/RenderingInJsWayParent";
+import { RenderingContentConditionllyParent } from "./ListAndConditionalClass/RenderingContentConditionally/RenderingContentConditionllyParent";
+import { RenderingInJsWayParent } from "./ListAndConditionalClass/RenderingContentConditionally-js-way/RenderingInJsWayParent";
 
 export const Module4ListAndConditional = () => {
   return (
     <div>
+      <h1>By Using Class Component</h1>
+      <RenderingContentConditionllyParent />
       <RenderingInJsWayParent />
     </div>
   );
