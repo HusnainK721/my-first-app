@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const ConditionalRenderingParentInFunc = () => {
+export const ConditionalRenderingInJSWayParentInFunc = () => {
   const [showPerson, setShowPerson] = useState(false);
   const [personData, setPersonData] = useState({
     person: [
@@ -31,32 +31,30 @@ export const ConditionalRenderingParentInFunc = () => {
   const togglePersonHandler = () => {
     setShowPerson(!showPerson);
   };
-  let person = null;
-  if (showPerson) {
-    person = (
-      <div>
-        <ConditionalRenderingChildInFunc
-          name={personData.person[0].name}
-          age={personData.person[0].age}
-        />
-        <ConditionalRenderingChildInFunc
-          name={personData.person[1].name}
-          age={personData.person[1].age}
-        />
-        <ConditionalRenderingChildInFunc
-          name={personData.person[2].name}
-          age={personData.person[2].age}
-          change={changeNameHandler}
-        />
-        <button onClick={switchNameHandler}>Click TO Change State 2</button>
-      </div>
-    );
-  }
+
   return (
     <div>
       <button onClick={togglePersonHandler}>Click TO Change State 1</button>
 
-      {person}
+      {showPerson ? (
+        <div>
+          <ConditionalRenderingChildInFunc
+            name={personData.person[0].name}
+            age={personData.person[0].age}
+          />
+          <ConditionalRenderingChildInFunc
+            name={personData.person[1].name}
+            age={personData.person[1].age}
+          />
+          <ConditionalRenderingChildInFunc
+            name={personData.person[2].name}
+            age={personData.person[2].age}
+            change={changeNameHandler}
+          />
+          <button onClick={switchNameHandler}>Click TO Change State 2</button>
+        </div>
+      ) : null}
+      {/* {person} */}
     </div>
   );
 };
