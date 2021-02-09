@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { ListAndConditionalFunctionalChild } from "./ListAndConditionalFunctionalChild";
 
-export const ListAndConditionalFunctionalParent = () => {
+export const ConditionalRenderingParentInFunc = () => {
   const [showPerson, setShowPerson] = useState(false);
   const [personData, setPersonData] = useState({
     person: [
@@ -20,15 +19,15 @@ export const ListAndConditionalFunctionalParent = () => {
       ],
     });
   };
-  // const changeNameHandler = (e) => {
-  //   setPersonData({
-  //     person: [
-  //       { name: "UI", age: 23 },
-  //       { name: "Backend", age: 24 },
-  //       { name: e.target.value, age: 25 },
-  //     ],
-  //   });
-  // };
+  const changeNameHandler = (e) => {
+    setPersonData({
+      person: [
+        { name: "UI", age: 23 },
+        { name: "Backend", age: 24 },
+        { name: e.target.value, age: 25 },
+      ],
+    });
+  };
   const togglePersonHandler = () => {
     setShowPerson(!showPerson);
   };
@@ -36,18 +35,18 @@ export const ListAndConditionalFunctionalParent = () => {
   if (showPerson) {
     person = (
       <div>
-        <ListAndConditionalFunctionalChild
+        <ConditionalRenderingChildInFunc
           name={personData.person[0].name}
           age={personData.person[0].age}
         />
-        <ListAndConditionalFunctionalChild
+        <ConditionalRenderingChildInFunc
           name={personData.person[1].name}
           age={personData.person[1].age}
         />
-        <ListAndConditionalFunctionalChild
+        <ConditionalRenderingChildInFunc
           name={personData.person[2].name}
           age={personData.person[2].age}
-          // change={changeNameHandler}
+          change={changeNameHandler}
         />
         <button onClick={switchNameHandler}>Click TO Change State 2</button>
       </div>
@@ -56,9 +55,7 @@ export const ListAndConditionalFunctionalParent = () => {
   return (
     <div>
       <button onClick={togglePersonHandler}>Click TO Change State 1</button>
-      {/* {showPerson ? (
-        
-      ) : null} */}
+
       {person}
     </div>
   );

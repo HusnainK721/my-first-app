@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ListAndConditionalFunctionalChild = (props) => {
+export const ConditionalRenderingChildInJsWayFunc = (props) => {
   return (
     <div>
       <div>
