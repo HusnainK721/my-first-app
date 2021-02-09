@@ -33,7 +33,7 @@ export class RenderingContentConditionllyParent extends Component {
         <button onClick={this.toggleNamePersonHandler}>
           Conditional Rendering
         </button>
-        {this.showPerson ? (
+        {this.state.showPerson ? (
           <div>
             <RenderingContentConditionllyChild
               name={this.state.person[0].name}
