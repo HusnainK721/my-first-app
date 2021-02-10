@@ -3,9 +3,9 @@ import { RenderingContentConditionllyParent } from "./ListAndConditionalClass/A-
 import { RenderingInJsWayParent } from "./ListAndConditionalClass/B-RenderingContentConditionally-js-way/RenderingInJsWayParent";
 import { Row, Col } from "react-bootstrap";
 import { ConditionalRenderingParentInFunc } from "./ListAndConditionalFunctional/A-ConditionalRendering/ConditionalRenderingParentInFunc";
-import { ConditionalRenderingParentInJSWayFunc } from "./ListAndConditionalFunctional/B-ConditionalRenderingInJSWayInFunc/ConditionalRenderingParentInJSWayFunc";
-import { OutputtingListDynamicallyParentC } from "./ListAndConditionalClass/C-OutputtingListDynamicallyC/OutputtingListDynamicallyParentC";
-import { OutputtingListDynamicallyParentF } from "./ListAndConditionalFunctional/C-OutputtingListDynamicUsingMapF/OutputtingListDynamicallyParentF";
+import { ConditionalRenderingParentInJSWayFunc } from "./ListAndConditionalFunctional/B-ConditionalRenderingInJSWay/ConditionalRenderingParentInJSWayFunc";
+import { OutputtingListDynamicallyParentC } from "./ListAndConditionalClass/C-OutputtingListDynamically/OutputtingListDynamicallyParentC";
+import { OutputtingListDynamicallyParentF } from "./ListAndConditionalFunctional/C-OutputtingListDynamicUsingMap/OutputtingListDynamicallyParentF";
 import { DeletingStateParentC } from "./ListAndConditionalClass/D-DeletingState/DeletingStateParentC";
 
 export const Module4ListAndConditional = () => {
