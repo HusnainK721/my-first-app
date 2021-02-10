@@ -3,11 +3,11 @@ import React, { useState } from "react";
 export const CounterPractice = () => {
   const [addNumber, setAddNumber] = useState(10);
 
-  const handleAddCounter = () => {
-    setAddNumber(<img src="logo192.png" />);
+  const loadImageHandler1 = () => {
+    setAddNumber(<img src="logo192.png" alt="react img" />);
   };
-  const handleDeleteCounter = () => {
-    setAddNumber(<img src="Assets/Rose.jpg" />);
+  const loadImageHandler2 = () => {
+    setAddNumber(<img src="Assets/Rose.jpg" alt="react img" />);
   };
   return (
     <div>
@@ -15,9 +15,10 @@ export const CounterPractice = () => {
       <button>{addNumber}</button>
       <br />
       <br />
-      <button onClick={handleAddCounter}>Add Number </button>
+      <button onClick={loadImageHandler1}>change img 1 </button>
       <br />
       <br />
+      <button onClick={loadImageHandler2}>change img 2</button>
     </div>
   );
 };
