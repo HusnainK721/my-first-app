@@ -7,7 +7,7 @@ export const CounterPractice = () => {
     setAddNumber(<img src="logo192.png" />);
   };
   const handleDeleteCounter = () => {
-    setAddNumber(<img src="Assets/Rose.jpg" style={{ float: "right" }} />);
+    setAddNumber(<img src="Assets/Rose.jpg" />);
   };
   return (
     <div>
