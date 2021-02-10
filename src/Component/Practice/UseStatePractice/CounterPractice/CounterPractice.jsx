@@ -18,9 +18,6 @@ export const CounterPractice = () => {
       <button onClick={handleAddCounter}>Add Number </button>
       <br />
       <br />
-      <a href="#" onClick={handleDeleteCounter} style={{ float: "left" }}>
-        Delete Number
-      </a>
     </div>
   );
 };
