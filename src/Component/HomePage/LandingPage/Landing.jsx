@@ -17,7 +17,9 @@ export const Landing = () => {
         <FooterSection />
         <CounterPractice />
       </div>
-      <div>{/* <Module4ListAndConditional /> */}</div>
+      <div>
+        <Module4ListAndConditional />
+      </div>
     </React.Fragment>
   );
 };

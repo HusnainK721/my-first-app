@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ImageInUseState } from "../ImagePractice/ImageInUseState";
 
 export const CounterPractice = () => {
-  const [addNumber, setAddNumber] = useState(10);
+  const [addNumber, setAddNumber] = useState(0);
 
   const addCunterHandler = () => {
     setAddNumber(addNumber + 1);
