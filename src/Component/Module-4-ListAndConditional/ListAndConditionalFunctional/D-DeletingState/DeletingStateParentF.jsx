@@ -21,18 +21,22 @@ export const DeletingStateParentF = () => {
   const toggleNameHandler = () => {
     setShowPerson(!showPerson);
   };
+  const deleteParaHandler = (indexPerson) => {
+    setPersonData(personData.splice(personData, 1));
+  };
   return (
     <div className="mt-2">
+      <p>3. Deleting State onClick of Button </p>
       <button onClick={toggleNameHandler}>Toggle & Delete Content</button>
       {showPerson && (
         <div>
-          {personData.person.map((item) => {
+          {personData.person.map((item, index) => {
             return (
               <DeletingStateChildF
                 itemCurrent={item}
                 name={item.name}
                 age={item.age}
-                // clicked={deleteParaHandler}
+                clicked={() => deleteParaHandler(index)}
               />
             );
           })}
