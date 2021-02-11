@@ -16,10 +16,10 @@ export const CounterPractice = () => {
       <button>{addNumber}</button>
       <br />
       <br />
-      <button onClick={addCunterHandler}>change img 1 </button>
+      <button onClick={addCunterHandler}>Increase Count</button>
       <br />
       <br />
-      <button onClick={removeCunterHandler}>change img 2</button>
+      <button onClick={removeCunterHandler}>Decrease Count</button>
       <ImageInUseState />
     </div>
   );
