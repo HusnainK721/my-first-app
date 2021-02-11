@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { DeletingStateChildF } from "./DeletingStateChildF";
 export const DeletingStateParentF = () => {
+  const [showPerson, setShowPerson] = useState(false);
   const [personData, setPersonData] = useState({
     person: [
       { name: "khwaja", age: 27 },
@@ -18,24 +19,26 @@ export const DeletingStateParentF = () => {
     });
   };
   const toggleNameHandler = () => {
-    setPersonData(!personData);
+    setShowPerson(!showPerson);
   };
   return (
     <div>
       <button onClick={toggleNameHandler}>Toggle & Delete Content</button>
-      <div>
-        {personData.person.map((item) => {
-          return (
-            <DeletingStateChildF
-              itemCurrent={item}
-              name={item.name}
-              age={item.age}
-              // clicked={deleteParaHandler}
-            />
-          );
-        })}
-        <button onClick={switchNameHandler}>Change State</button>
-      </div>
+      {showPerson && (
+        <div>
+          {personData.person.map((item) => {
+            return (
+              <DeletingStateChildF
+                itemCurrent={item}
+                name={item.name}
+                age={item.age}
+                // clicked={deleteParaHandler}
+              />
+            );
+          })}
+          <button onClick={switchNameHandler}>Change State</button>
+        </div>
+      )}
     </div>
   );
 };
