@@ -13,7 +13,7 @@ export const Module4ListAndConditional = () => {
   return (
     <div>
       <Row>
-        <Col xs={12} lg={6}>
+        <Col xs={6} lg={6} md={6}>
           <div>
             <h4> Module 4 By Using Class Component</h4>
             <RenderingContentConditionllyParent />
@@ -23,7 +23,7 @@ export const Module4ListAndConditional = () => {
           </div>
         </Col>
 
-        <Col xs={12} lg={6}>
+        <Col xs={6} lg={6} md={6}>
           <div>
             <h4>Module 4 by Using Functional Component</h4>
             <ConditionalRenderingParentInFunc />
