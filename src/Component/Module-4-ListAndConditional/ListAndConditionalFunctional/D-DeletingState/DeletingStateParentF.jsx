@@ -8,10 +8,32 @@ export const DeletingStateParentF = () => {
       { name: "Rehan", age: 20 },
     ],
   });
+  const switchNameHandler = () => {
+    setPersonData({
+      person: [
+        { name: " Md khwaja", age: 270 },
+        { name: " Md Zahoor", age: 180 },
+        { name: "Sk Rehan", age: 200 },
+      ],
+    });
+  };
+
   return (
     <div>
-      {personData.person.map}
-      <DeletingStateChildF />
+      <button onClick={toggleNameHandler}>Toggle & Delete Content</button>
+      <div>
+        {personData.person.map((item) => {
+          return (
+            <DeletingStateChildF
+              itemCurrent={item}
+              name={item.name}
+              age={item.age}
+              // clicked={deleteParaHandler}
+            />
+          );
+        })}
+        <button onClick={switchNameHandler}>Change State</button>
+      </div>
     </div>
   );
 };
