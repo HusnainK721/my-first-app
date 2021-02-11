@@ -4,9 +4,9 @@ export const DeletingStateParentF = () => {
   const [showPerson, setShowPerson] = useState(false);
   const [personData, setPersonData] = useState({
     person: [
-      { name: "khwaja", age: 27 },
-      { name: "Zahoor", age: 18 },
-      { name: "Rehan", age: 20 },
+      { id: "khwaja3", name: "Rehan", age: 20 },
+      { id: "khwaja1", name: "khwaja", age: 27 },
+      { id: "khwaja2", name: "Zahoor", age: 18 },
     ],
   });
   const switchNameHandler = () => {
@@ -34,6 +34,7 @@ export const DeletingStateParentF = () => {
                 itemCurrent={item}
                 name={item.name}
                 age={item.age}
+                key={item.id}
               />
             );
           })}

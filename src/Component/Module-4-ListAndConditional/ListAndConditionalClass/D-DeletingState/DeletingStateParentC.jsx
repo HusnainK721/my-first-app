@@ -4,11 +4,11 @@ import { DeletingStateChildC } from "./DeletingStateChildC";
 export class DeletingStateParentC extends Component {
   state = {
     person: [
-      { name: "khwaja", age: 27 },
-      { name: "Junaid", age: 28 },
-      { name: "Dilshad", age: 29 },
-      { name: "Sulaiman", age: 30 },
-      { name: "Saleem", age: 31 },
+      { id: "khwaja1", name: "khwaja", age: 27 },
+      { id: "khwaja2", name: "Junaid", age: 28 },
+      { id: "khwaja3", name: "Dilshad", age: 29 },
+      { id: "khwaja4", name: "Sulaiman", age: 30 },
+      { id: "khwaja5", name: "Saleem", age: 31 },
     ],
   };
   showPerson;
@@ -48,6 +48,7 @@ export class DeletingStateParentC extends Component {
               <DeletingStateChildC
                 name={item.name}
                 age={item.age}
+                key={item.id}
                 delete={() => this.deleteStateHandler(index)}
               />
             );
