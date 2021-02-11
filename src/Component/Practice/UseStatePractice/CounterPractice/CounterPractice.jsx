@@ -1,13 +1,14 @@
 import React, { useState } from "react";
+import { ImageInUseState } from "../ImagePractice/ImageInUseState";
 
 export const CounterPractice = () => {
   const [addNumber, setAddNumber] = useState(10);
 
-  const loadImageHandler1 = () => {
-    setAddNumber(<img src="logo192.png" alt="react img" />);
+  const addCunterHandler = () => {
+    setAddNumber(addNumber + 1);
   };
-  const loadImageHandler2 = () => {
-    setAddNumber(<img src="Assets/Rose.jpg" alt="react img" />);
+  const removeCunterHandler = () => {
+    setAddNumber(addNumber - 1);
   };
   return (
     <div>
@@ -15,10 +16,11 @@ export const CounterPractice = () => {
       <button>{addNumber}</button>
       <br />
       <br />
-      <button onClick={loadImageHandler1}>change img 1 </button>
+      <button onClick={addCunterHandler}>change img 1 </button>
       <br />
       <br />
-      <button onClick={loadImageHandler2}>change img 2</button>
+      <button onClick={removeCunterHandler}>change img 2</button>
+      <ImageInUseState />
     </div>
   );
 };
