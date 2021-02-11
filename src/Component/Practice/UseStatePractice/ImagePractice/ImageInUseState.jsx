@@ -8,33 +8,12 @@ export const ImageInUseState = () => {
       style={{ height: "10rem", width: "10rem" }}
     />
   );
-  const COLORS = {
-    // text: "black",
-    background: "black",
-  };
+
   const changeImageHandler1 = (e) => {
-    setAddImage(COLORS);
-    //   <div>
-    //     <img
-    //       src="Assets/Rose.jpg"
-    //       alt="img1"
-    //       style={{ height: "10rem", width: "10rem" }}
-    //     />
-    //     <br />
-    //     <input type="text" />
-    //   </div>
+    setAddImage();
   };
   const changeImageHandler2 = () => {
     setAddImage();
-    //   <div>
-    //     <img
-    //       src="logo512.png"
-    //       alt="img1"
-    //       style={{ height: "10rem", width: "10rem" }}
-    //     />
-    //     <br />
-    //     <input type="text" />
-    //   </div>
   };
   return (
     <div className="mt-2">
