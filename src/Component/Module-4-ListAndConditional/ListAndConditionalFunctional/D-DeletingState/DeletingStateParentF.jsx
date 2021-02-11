@@ -17,7 +17,9 @@ export const DeletingStateParentF = () => {
       ],
     });
   };
-  const toggleNameHandler = () => {};
+  const toggleNameHandler = () => {
+    setPersonData(!personData);
+  };
   return (
     <div>
       <button onClick={toggleNameHandler}>Toggle & Delete Content</button>
