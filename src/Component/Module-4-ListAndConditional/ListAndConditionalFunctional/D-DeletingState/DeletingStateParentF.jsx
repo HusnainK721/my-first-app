@@ -42,7 +42,9 @@ export const DeletingStateParentF = () => {
               />
             );
           })}
-          <button onClick={switchNameHandler}>Change State</button>
+          <button onClick={switchNameHandler} className="mt-2">
+            Change State
+          </button>
         </div>
       ) : null}
     </div>
