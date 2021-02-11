@@ -21,8 +21,10 @@ export const DeletingStateParentF = () => {
   const toggleNameHandler = () => {
     setShowPerson(!showPerson);
   };
-  const deleteParaHandler = (indexPerson) => {
-    setPersonData(personData.splice(personData, 1));
+  const deleteParaHandler = (itemIndex) => {
+    const personDataCopy = personData; // thi is called state immutability (Copy of current state)
+    personDataCopy.splice(itemIndex, 1);
+    setPersonData({ personDataCopy: personDataCopy });
   };
   return (
     <div className="mt-2">
