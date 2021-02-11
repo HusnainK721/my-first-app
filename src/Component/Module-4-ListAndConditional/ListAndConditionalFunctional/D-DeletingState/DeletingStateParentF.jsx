@@ -22,7 +22,7 @@ export const DeletingStateParentF = () => {
     setShowPerson(!showPerson);
   };
   return (
-    <div>
+    <div className="mt-2">
       <button onClick={toggleNameHandler}>Toggle & Delete Content</button>
       {showPerson && (
         <div>
