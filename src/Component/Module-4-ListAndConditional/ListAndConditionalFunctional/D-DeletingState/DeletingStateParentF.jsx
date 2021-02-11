@@ -21,15 +21,7 @@ export const DeletingStateParentF = () => {
   const toggleNameHandler = () => {
     setShowPerson(!showPerson);
   };
-  const deleteParaHandler = (itemIndex) => {
-    const personDataCopy = [...personData.person]; // thi is called state immutability (Copy of current state)
-    personDataCopy.splice(itemIndex, 1);
-    console.log("personDataCopy", personDataCopy);
 
-    setPersonData([personDataCopy]);
-  };
-  //  const newPeople = people.filter((person) => { person.id !== id;
-  //    setPeople( newPeople );
   return (
     <div className="mt-2">
       <p>3. Deleting State onClick of Button </p>
@@ -42,7 +34,6 @@ export const DeletingStateParentF = () => {
                 itemCurrent={item}
                 name={item.name}
                 age={item.age}
-                clicked={() => deleteParaHandler(index)}
               />
             );
           })}
