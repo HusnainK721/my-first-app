@@ -3,7 +3,10 @@ import { MapFunctionPracticeChild } from "./MapFunctionPracticeChild";
 
 export const MapFunctionPracticeParent = () => {
   const PersonData = [
-    { Company: "Pickupbiz", carName: "tesla" },
+    {
+      Company: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus assumenda officia labore fugit officiis quaerat rerum eius, quibusdam voluptate eveniet voluptatibus aspernatur omnis, non tempore? Ipsum quibusdam animi vero officiis.`,
+      carName: "tesla",
+    },
     { Company: "Ford", carName: "indigo" },
     { Company: "Tata", carName: "Nano" },
     { Company: "audi", carName: "audix1" },
@@ -14,7 +17,12 @@ export const MapFunctionPracticeParent = () => {
   return (
     <div>
       {personDetails.map((fetchedData) => {
-        return <MapFunctionPracticeChild />;
+        return (
+          <MapFunctionPracticeChild
+            companyName={fetchedData.Company}
+            car={fetchedData.carName}
+          />
+        );
       })}
     </div>
   );

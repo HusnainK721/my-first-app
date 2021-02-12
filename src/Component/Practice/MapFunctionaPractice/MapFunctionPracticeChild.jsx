@@ -1,10 +1,11 @@
 import React from "react";
 
-export const MapFunctionPracticeChild = () => {
+export const MapFunctionPracticeChild = (fetch) => {
   return (
     <div>
       <p>
-        this is khwaja i am 27 year old!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        This is {fetch.companyName} my product is {fetch.car}
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
       </p>
     </div>
   );
