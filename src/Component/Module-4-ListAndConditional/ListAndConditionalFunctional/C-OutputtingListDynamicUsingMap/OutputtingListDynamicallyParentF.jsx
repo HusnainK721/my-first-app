@@ -39,9 +39,7 @@ export const OutputtingListDynamicallyParentF = (itemCurrent) => {
               />
             );
           })}
-          <p>
-            This is {itemCurrent.name} i am {itemCurrent.age} year old
-          </p>
+
           <button onClick={handleNameChange}> Change State</button>
         </div>
       ) : null}
