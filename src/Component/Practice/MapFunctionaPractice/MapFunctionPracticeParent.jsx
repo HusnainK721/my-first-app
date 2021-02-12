@@ -2,30 +2,37 @@ import React, { useState } from "react";
 import { MapFunctionPracticeChild } from "./MapFunctionPracticeChild";
 
 export const MapFunctionPracticeParent = () => {
-  const PersonData = [
-    {
-      Company: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus assumenda officia labore fugit officiis quaerat rerum eius, quibusdam voluptate eveniet voluptatibus aspernatur omnis, non tempore? Ipsum quibusdam animi vero officiis.`,
-      carName: "tesla",
-    },
-    { Company: "Ford", carName: "indigo" },
-    { Company: "Tata", carName: "Nano" },
-    { Company: "audi", carName: "audix1" },
-    { Company: "mahindra", carName: "Thaar" },
-  ];
-
-  const [personDetails, setPersonDetails] = useState(PersonData);
   const [show, setShow] = useState(false);
+
+  const [personDetails, setPersonDetails] = useState({
+    PersonData: [
+      { Company: "Ford", carName: "indigo" },
+      { Company: "Tata", carName: "Nano" },
+      { Company: "audi", carName: "audix1" },
+      { Company: "mahindra", carName: "Thaar" },
+    ],
+  });
+  const handlePersonSwitch = () => {
+    setPersonDetails({
+      PersonData: [
+        { Company: "Ford1", carName: "indigo" },
+        { Company: "Tata1", carName: "Nano" },
+        { Company: "audi1", carName: "audix1" },
+        { Company: "mahindra1", carName: "Thaar" },
+      ],
+    });
+  };
   const togglePersonHandler = () => {
-    setPersonDetails(!personDetails);
+    setShow(!show);
   };
   return (
     <div>
-      <button onClick={togglePersonHandler}>
+      <button onClick={togglePersonHandler} className="mt-2">
         loading data using map function
       </button>
-      {personDetails ? (
+      {show && (
         <div>
-          {personDetails.map((fetchedData) => {
+          {personDetails.PersonData.map((fetchedData) => {
             return (
               <MapFunctionPracticeChild
                 companyName={fetchedData.Company}
@@ -33,8 +40,9 @@ export const MapFunctionPracticeParent = () => {
               />
             );
           })}
+          <button onClick={handlePersonSwitch}>change state</button>
         </div>
-      ) : null}
+      )}
     </div>
   );
 };
