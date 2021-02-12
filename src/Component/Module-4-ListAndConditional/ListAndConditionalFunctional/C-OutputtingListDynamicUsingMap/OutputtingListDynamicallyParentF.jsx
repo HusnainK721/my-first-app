@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import { OutputtingListDynamicallyChildF } from "./OutputtingListDynamicallyChildF";
 
-export const OutputtingListDynamicallyParentF = () => {
+export const OutputtingListDynamicallyParentF = (itemCurrent) => {
+  const defaultPersonData = [
+    { name: "Khwaja", age: 27 },
+    { name: "Roman", age: 12 },
+    { name: "Kashaf", age: 4 },
+    { name: "Kashaf", age: 4 },
+    { name: "Kashaf", age: 40 },
+  ];
   const [ShowPersonData, setShowPersonData] = useState(false);
-  const [PersonData, setPersonData] = useState({
-    person: [
-      { name: "Khwaja", age: 27 },
-      { name: "Roman", age: 12 },
-      { name: "Kashaf", age: 4 },
-    ],
-  });
+  const [PersonData, setPersonData] = useState(defaultPersonData);
   const handleNameChange = () => {
     setPersonData({
       person: [
@@ -30,7 +31,7 @@ export const OutputtingListDynamicallyParentF = () => {
       </button>
       {ShowPersonData ? (
         <div>
-          {PersonData.person.map((itemCurrent) => {
+          {PersonData.map((itemCurrent) => {
             return (
               <OutputtingListDynamicallyChildF
                 name={itemCurrent.name}
@@ -38,6 +39,9 @@ export const OutputtingListDynamicallyParentF = () => {
               />
             );
           })}
+          <p>
+            This is {itemCurrent.name} i am {itemCurrent.age} year old
+          </p>
           <button onClick={handleNameChange}> Change State</button>
         </div>
       ) : null}
