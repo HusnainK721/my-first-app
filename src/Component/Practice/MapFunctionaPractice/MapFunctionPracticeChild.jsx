@@ -5,7 +5,6 @@ export const MapFunctionPracticeChild = (fetch) => {
     <div>
       <p>
         This is {fetch.companyName} my product is {fetch.car}
-        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
       </p>
     </div>
   );
