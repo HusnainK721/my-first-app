@@ -14,6 +14,7 @@ export const MapFunctionPracticeParent = () => {
   ];
 
   const [personDetails, setPersonDetails] = useState(PersonData);
+  const [show, setShow] = useState(false);
   const togglePersonHandler = () => {
     setPersonDetails(!personDetails);
   };
