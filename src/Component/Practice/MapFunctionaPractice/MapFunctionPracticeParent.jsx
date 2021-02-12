@@ -22,14 +22,16 @@ export const MapFunctionPracticeParent = () => {
       <button onClick={togglePersonHandler}>
         loading data using map function
       </button>
-      {personDetails.map((fetchedData) => {
-        return (
-          <MapFunctionPracticeChild
-            companyName={fetchedData.Company}
-            car={fetchedData.carName}
-          />
-        );
-      })}
+      <div>
+        {personDetails.map((fetchedData) => {
+          return (
+            <MapFunctionPracticeChild
+              companyName={fetchedData.Company}
+              car={fetchedData.carName}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };
