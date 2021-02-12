@@ -16,6 +16,7 @@ export const MapFunctionPracticeParent = () => {
   const [personDetails, setPersonDetails] = useState(PersonData);
   return (
     <div>
+      <button>loading data using map function</button>
       {personDetails.map((fetchedData) => {
         return (
           <MapFunctionPracticeChild
