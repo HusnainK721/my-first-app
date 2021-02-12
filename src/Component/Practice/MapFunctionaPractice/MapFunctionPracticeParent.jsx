@@ -14,7 +14,9 @@ export const MapFunctionPracticeParent = () => {
   ];
 
   const [personDetails, setPersonDetails] = useState(PersonData);
-  const togglePersonHandler = () => {};
+  const togglePersonHandler = () => {
+    setPersonDetails(!personDetails);
+  };
   return (
     <div>
       <button onClick={togglePersonHandler}>
