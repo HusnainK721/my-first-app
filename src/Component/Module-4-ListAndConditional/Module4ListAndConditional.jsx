@@ -8,6 +8,7 @@ import { OutputtingListDynamicallyParentC } from "./ListAndConditionalClass/C-Ou
 import { OutputtingListDynamicallyParentF } from "./ListAndConditionalFunctional/C-OutputtingListDynamicUsingMap/OutputtingListDynamicallyParentF";
 import { DeletingStateParentC } from "./ListAndConditionalClass/D-DeletingState/DeletingStateParentC";
 import { DeletingStateParentF } from "./ListAndConditionalFunctional/D-DeletingState/DeletingStateParentF";
+import { MapFunctionPracticeParent } from "../Practice/MapFunctionaPractice/MapFunctionPracticeParent";
 
 export const Module4ListAndConditional = () => {
   return (
@@ -30,6 +31,7 @@ export const Module4ListAndConditional = () => {
             <ConditionalRenderingParentInJSWayFunc />
             <OutputtingListDynamicallyParentF />
             <DeletingStateParentF />
+            <MapFunctionPracticeParent />
           </div>
         </Col>
       </Row>
