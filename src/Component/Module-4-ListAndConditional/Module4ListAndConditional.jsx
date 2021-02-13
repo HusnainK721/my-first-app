@@ -9,7 +9,7 @@ import { OutputtingListDynamicallyParentF } from "./ListAndConditionalFunctional
 import { DeletingStateParentC } from "./ListAndConditionalClass/D-DeletingState/DeletingStateParentC";
 import { DeletingStateParentF } from "./ListAndConditionalFunctional/D-DeletingState/DeletingStateParentF";
 import { MapFunctionPracticeParent } from "../Practice/MapFunctionaPractice/MapFunctionPracticeParent";
-
+import { FetchingDataFromJsonParent } from "../Practice/FetchingDataFromJSON/FetchingDataFromJsonParent";
 export const Module4ListAndConditional = () => {
   return (
     <div>
@@ -37,6 +37,7 @@ export const Module4ListAndConditional = () => {
       <div>
         <h1>React Class Practice</h1>
         <MapFunctionPracticeParent />
+        <FetchingDataFromJsonParent />
       </div>
     </div>
   );
