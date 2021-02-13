@@ -8,36 +8,36 @@ import { OutputtingListDynamicallyParentC } from "./ListAndConditionalClass/C-Ou
 import { OutputtingListDynamicallyParentF } from "./ListAndConditionalFunctional/C-OutputtingListDynamicUsingMap/OutputtingListDynamicallyParentF";
 import { DeletingStateParentC } from "./ListAndConditionalClass/D-DeletingState/DeletingStateParentC";
 import { DeletingStateParentF } from "./ListAndConditionalFunctional/D-DeletingState/DeletingStateParentF";
-// import { MapFunctionPracticeParent } from "../Practice/MapFunctionaPractice/MapFunctionPracticeParent";
+import { MapFunctionPracticeParent } from "../Practice/MapFunctionaPractice/MapFunctionPracticeParent";
 
 export const Module4ListAndConditional = () => {
   return (
     <div>
       <Row>
         <Col xs={6} lg={6} md={6}>
-          <div>
+          {/* <div>
             <h4> Module 4 By Using Class Component</h4>
             <RenderingContentConditionllyParent />
             <RenderingInJsWayParent />
             <OutputtingListDynamicallyParentC />
             <DeletingStateParentC />
-          </div>
+          </div> */}
         </Col>
 
         <Col xs={6} lg={6} md={6}>
-          <div>
+          {/* <div>
             <h4>Module 4 by Using Functional Component</h4>
             <ConditionalRenderingParentInFunc />
             <ConditionalRenderingParentInJSWayFunc />
             <OutputtingListDynamicallyParentF />
             <DeletingStateParentF />
-          </div>
+          </div> */}
         </Col>
       </Row>
-      {/* <div>
+      <div>
         <h1>React Class Practice</h1>
         <MapFunctionPracticeParent />
-      </div> */}
+      </div>
     </div>
   );
 };
