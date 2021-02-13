@@ -5,8 +5,9 @@ export const FetchingDataFromJsonParent = () => {
   console.log("testing personReducer=>=>=>=>", PersonReducers);
   return (
     <div>
-      {}
-      <FetchingDataFromJsonChild />
+      {PersonReducers.personDetail.map((item) => {
+        return <FetchingDataFromJsonChild itemCurrent={item} />;
+      })}
     </div>
   );
 };

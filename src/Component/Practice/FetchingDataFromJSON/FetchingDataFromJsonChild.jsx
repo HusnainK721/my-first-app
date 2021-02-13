@@ -1,16 +1,20 @@
 import React from "react";
-import { Card, Button } from "react-bootstrap";
-export const FetchingDataFromJsonChild = () => {
+import { Card, Button, Row } from "react-bootstrap";
+import "./FetchingDataFromJSON.css";
+export const FetchingDataFromJsonChild = ({ itemCurrent }) => {
+  console.log("data testing===>", itemCurrent);
   return (
     <div>
-      <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src="Assets/Rose.jpg" />
-        <Card.Body>
-          <Card.Title>Red Rose</Card.Title>
-          <Card.Text>This is red rose tommorow is valentins day</Card.Text>
-          <Button variant="primary">Click Me</Button>
-        </Card.Body>
-      </Card>
+      <Row>
+        <Card className="testing">
+          <Card.Img variant="top" src={itemCurrent.image} alt="image" />
+          <Card.Body>
+            <Card.Title>{itemCurrent.name}</Card.Title>
+            <Card.Text>{itemCurrent.description}</Card.Text>
+            <Button variant="primary">Click Me</Button>
+          </Card.Body>
+        </Card>
+      </Row>
     </div>
   );
 };
