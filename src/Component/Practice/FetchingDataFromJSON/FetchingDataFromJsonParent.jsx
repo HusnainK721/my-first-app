@@ -1,5 +1,9 @@
 import React from "react";
-
+import { FetchingDataFromJsonChild } from "./FetchingDataFromJsonChild";
 export const FetchingDataFromJsonParent = () => {
-  return <div></div>;
+  return (
+    <div>
+      <FetchingDataFromJsonChild />
+    </div>
+  );
 };
