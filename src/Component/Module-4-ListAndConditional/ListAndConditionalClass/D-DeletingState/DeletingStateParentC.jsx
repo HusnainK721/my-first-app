@@ -48,7 +48,6 @@ export class DeletingStateParentC extends Component {
               <DeletingStateChildC
                 name={item.name}
                 age={item.age}
-                key={item.id}
                 delete={() => this.deleteStateHandler(index)}
               />
             );

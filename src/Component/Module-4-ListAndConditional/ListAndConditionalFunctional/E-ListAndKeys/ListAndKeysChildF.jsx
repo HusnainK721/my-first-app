@@ -6,7 +6,7 @@ export const ListAndKeysChildF = (itemCurrent) => {
       <p onClick={itemCurrent.clicked}>
         my name is {itemCurrent.name} & i am 27 year old
       </p>
-      <input type="text" />
+      <input type="text" value={itemCurrent.name} />
     </div>
   );
 };

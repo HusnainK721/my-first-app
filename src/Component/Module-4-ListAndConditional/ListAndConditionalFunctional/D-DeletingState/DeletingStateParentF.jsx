@@ -37,7 +37,6 @@ export const DeletingStateParentF = () => {
                 itemCurrent={item}
                 name={item.name}
                 age={item.age}
-                key={item.id}
                 clicked={removePersonData}
               />
             );
