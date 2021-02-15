@@ -27,6 +27,15 @@ export class ListAndKeysParentC extends Component {
       ],
     });
   };
+  inputHandler = (e) => {
+    this.setState({
+      person: [
+        { name: e.target.value, age: 25 },
+        { name: e.target.value, age: 30 },
+        { name: e.target.value, age: 20 },
+      ],
+    });
+  };
   deleteStateHandler = (personDataIndex) => {
     const personData = this.state.person;
     // instead of above line you can write as follow:-
