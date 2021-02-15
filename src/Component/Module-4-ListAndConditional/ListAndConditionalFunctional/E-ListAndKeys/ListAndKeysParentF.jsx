@@ -25,6 +25,7 @@ export const ListAndKeysParentF = ({ itemCurrent }) => {
     newPersonData.splice(index, 1);
     setPersonData(newPersonData);
   };
+
   return (
     <div className="mt-2">
       <p>3. Deleting State onClick of Button </p>
