@@ -50,6 +50,7 @@ export class ListAndKeysParentC extends Component {
                 age={item.age}
                 key={item.id}
                 delete={() => this.deleteStateHandler(index)}
+                change={this.inputHandler}
               />
             );
           })}
