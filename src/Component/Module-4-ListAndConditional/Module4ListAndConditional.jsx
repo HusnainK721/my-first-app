@@ -10,35 +10,40 @@ import { DeletingStateParentC } from "./ListAndConditionalClass/D-DeletingState/
 import { DeletingStateParentF } from "./ListAndConditionalFunctional/D-DeletingState/DeletingStateParentF";
 import { MapFunctionPracticeParent } from "../Practice/MapFunctionaPractice/MapFunctionPracticeParent";
 import { FetchingDataFromJsonParent } from "../Practice/FetchingDataFromJSON/FetchingDataFromJsonParent";
+import { ListAndKeysParentC } from "./ListAndConditionalClass/E-ListAndKeys/ListAndKeysParentC";
+import { ListAndKeysParentF } from "./ListAndConditionalFunctional/E-ListAndKeys/ListAndKeysParentF";
 export const Module4ListAndConditional = () => {
   return (
     <div>
       <Row>
         <Col xs={6} lg={6} md={6}>
-          {/* <div>
+          <div>
             <h4> Module 4 By Using Class Component</h4>
             <RenderingContentConditionllyParent />
             <RenderingInJsWayParent />
             <OutputtingListDynamicallyParentC />
             <DeletingStateParentC />
-          </div> */}
+            <ListAndKeysParentC />
+          </div>
         </Col>
 
         <Col xs={6} lg={6} md={6}>
-          {/* <div>
+          <div>
             <h4>Module 4 by Using Functional Component</h4>
             <ConditionalRenderingParentInFunc />
             <ConditionalRenderingParentInJSWayFunc />
             <OutputtingListDynamicallyParentF />
             <DeletingStateParentF />
-          </div> */}
+
+            <ListAndKeysParentF />
+          </div>
         </Col>
       </Row>
-      <div>
+      {/* <div>
         <h1>React Class Practice</h1>
         <MapFunctionPracticeParent />
         <FetchingDataFromJsonParent />
-      </div>
+      </div> */}
     </div>
   );
 };
