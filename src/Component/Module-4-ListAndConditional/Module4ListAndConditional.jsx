@@ -8,8 +8,8 @@ import { OutputtingListDynamicallyParentC } from "./ListAndConditionalClass/C-Ou
 import { OutputtingListDynamicallyParentF } from "./ListAndConditionalFunctional/C-OutputtingListDynamicUsingMap/OutputtingListDynamicallyParentF";
 import { DeletingStateParentC } from "./ListAndConditionalClass/D-DeletingState/DeletingStateParentC";
 import { DeletingStateParentF } from "./ListAndConditionalFunctional/D-DeletingState/DeletingStateParentF";
-import { MapFunctionPracticeParent } from "../Practice/MapFunctionaPractice/MapFunctionPracticeParent";
-import { FetchingDataFromJsonParent } from "../Practice/FetchingDataFromJSON/FetchingDataFromJsonParent";
+// import { MapFunctionPracticeParent } from "../Practice/MapFunctionaPractice/MapFunctionPracticeParent";
+// import { FetchingDataFromJsonParent } from "../Practice/FetchingDataFromJSON/FetchingDataFromJsonParent";
 import { ListAndKeysParentC } from "./ListAndConditionalClass/E-ListAndKeys/ListAndKeysParentC";
 import { ListAndKeysParentF } from "./ListAndConditionalFunctional/E-ListAndKeys/ListAndKeysParentF";
 export const Module4ListAndConditional = () => {
