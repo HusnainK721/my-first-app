@@ -20,9 +20,6 @@ export const Landing = () => {
       <div>
         <Module4ListAndConditional />
       </div>
-      <div>
-        <Module7ReduxBasics />
-      </div>
     </React.Fragment>
   );
 };
