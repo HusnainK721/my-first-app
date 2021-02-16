@@ -5,6 +5,7 @@ import { LeftNavigationSection } from "../../B-LeftNavigationSection/LeftNavigat
 import { RightNavigationSection } from "../../D-RightNavigationSection/RightNavigationSection";
 import { FooterSection } from "../../E-FooterSection/FooterSection";
 import { Module4ListAndConditional } from "../../Module-4-ListAndConditional/Module4ListAndConditional";
+import { Module7ReduxBasics } from "../../Module-7-Redux/Module7ReduxBasics";
 // import { CounterPractice } from "../../Practice/UseStatePractice/CounterPractice/CounterPractice";
 export const Landing = () => {
   return (
@@ -19,6 +20,9 @@ export const Landing = () => {
       </div>
       <div>
         <Module4ListAndConditional />
+      </div>
+      <div>
+        <Module7ReduxBasics />
       </div>
     </React.Fragment>
   );
