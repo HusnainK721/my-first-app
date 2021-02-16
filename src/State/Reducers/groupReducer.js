@@ -1,4 +1,4 @@
-const groupReducer = () => {};
+const groupReducer = (state = groupsDefaultState, action) => {};
 
 const groupsDefaultState = {
   groups: [
