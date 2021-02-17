@@ -7,10 +7,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { configreStore } from "./State/Store/configureStore";
 import { Provider } from "react-redux";
 
-const store = configreStore();
+// const store = configreStore();
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
+    <Provider store={configreStore()}>
       <App />
     </Provider>
   </React.StrictMode>,
