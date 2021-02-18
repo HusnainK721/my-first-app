@@ -15,6 +15,16 @@ export const FetchingDataFromReduxParent = () => {
         groupData.map((item) => {
           return <FetchingDataFromReduxChild itemCurrent={item} />;
         })}
+      {groupData &&
+        groupData.map((item) => {
+          return (
+            <div>
+              <li>{item.name}</li>
+              <img src={item.image} alt="images" width="100px" />
+              <p>{item.desc}</p>
+            </div>
+          );
+        })}
     </div>
   );
 };
