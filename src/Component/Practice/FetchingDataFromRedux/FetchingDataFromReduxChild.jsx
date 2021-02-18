@@ -1,9 +1,9 @@
 import React from "react";
 
-export const FetchingDataFromReduxChild = () => {
+export const FetchingDataFromReduxChild = ({ itemCurrent }) => {
   return (
     <div>
-      <h1>hiiiiiiiiiiiiiiiiii</h1>
+      <h1>{itemCurrent.name}</h1>
     </div>
   );
 };
