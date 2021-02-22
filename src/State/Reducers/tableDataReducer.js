@@ -1,30 +1,32 @@
+import { v4 as uuidv4 } from "uuid";
 const tableDefaultSate = {
   Tables: [
     {
-      id: "1asd",
+      id: uuidv4(),
       name: "Mohammed Khaja",
       Rollno: "15",
       contact: "18326832847",
     },
     {
+      id: uuidv4(),
       name: "Mohammed Amer",
       Rollno: "16",
       contact: "28326832847",
     },
     {
-      id: "2asd",
+      id: uuidv4(),
       name: "Mohammed Rehan",
       Rollno: "17",
       contact: "38326832847",
     },
     {
-      id: "3asd",
+      id: uuidv4(),
       name: "Mohammed salman",
       Rollno: "18",
       contact: "48326832847",
     },
     {
-      id: "4asd",
+      id: uuidv4(),
       name: "Mohammed Mazhar",
       Rollno: "19",
       contact: "58326832847",
