@@ -5,21 +5,21 @@ const postDefaultState = {
     {
       id: uuidv4(),
       name: "Rabey",
-      img: "URL",
+      img: "Assets/Rose.jpg",
       description:
         "sjfjfgsjfgjfgsdjfgssjhfgjfgsjhfgsjhfgsjhfgjhfgasfgfgaslhfgashfgsf",
     },
     {
       id: uuidv4(),
       name: "Rizwan",
-      img: "URL",
+      img: "Assets/Rose.jpg",
       description:
         "sjfjfgsjfgjfgsdjfgssjhfgjfgsjhfgsjhfgsjhfgjhfgasfgfgaslhfgashfgsf",
     },
     {
       id: uuidv4(),
       name: "Aamer",
-      img: "URL",
+      img: "Assets/Rose.jpg",
       description:
         "sjfjfgsjfgjfgsdjfgssjhfgjfgsjhfgsjhfgsjhfgjhfgasfgfgaslhfgashfgsf",
     },

@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { FetchingDataFromReduxChild } from "./FetchingDataFromReduxChild";
 import { useSelector } from "react-redux";
-// import { getAllGroups } from "../../../State/Selector/groupSelector";
-import { getAllTablesData } from "../../../State/Selector/tableDataSelector";
+import { getAllPosts } from "../../../State/Selector/userPostSelector";
+import { Card } from "react-bootstrap";
 export const FetchingDataFromReduxParent = () => {
-  const selector = useSelector(getAllTablesData);
-  const [groupData, setGroupData] = useState();
+  const [postData, setPostData] = useState();
+  const selector = useSelector(getAllPosts);
   useEffect(() => {
-    setGroupData(selector);
-    console.log("selector data=======------>>>>", selector);
+    setPostData(selector);
   }, [selector]);
-
   return (
     <div>
       {/* {groupData &&
@@ -30,7 +28,7 @@ export const FetchingDataFromReduxParent = () => {
           );
         })} */}
 
-      <table border="10">
+      {/* <table border="10">
         <tr>
           <th>SR No</th>
           <th>name</th>
@@ -48,7 +46,22 @@ export const FetchingDataFromReduxParent = () => {
               </tr>
             );
           })}
-      </table>
+      </table>*/}
+
+      {postData &&
+        postData.map((item) => {
+          console.log("data==>", item);
+          return (
+            <div key={item.id}>
+              <li>{item.name}</li>
+              <li>
+                {" "}
+                <img src={item.img} alt="" />
+              </li>
+              <li>{item.description}</li>
+            </div>
+          );
+        })}
     </div>
   );
 };
