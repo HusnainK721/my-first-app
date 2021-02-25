@@ -11,7 +11,7 @@ export const FetchingDataFromReduxParent = () => {
   }, [selector]);
   return (
     <div>
-      {/* {groupData &&
+      {groupData &&
         groupData.map((item) => {
           return (
             <FetchingDataFromReduxChild itemCurrent={item} key={item.id} />
@@ -26,9 +26,9 @@ export const FetchingDataFromReduxParent = () => {
               <p>{item.desc}</p>
             </div>
           );
-        })} */}
+        })}
 
-      {/* <table border="10">
+      <table border="10">
         <tr>
           <th>SR No</th>
           <th>name</th>
@@ -46,7 +46,7 @@ export const FetchingDataFromReduxParent = () => {
               </tr>
             );
           })}
-      </table>*/}
+      </table>
 
       {postData &&
         postData.map((item) => {
