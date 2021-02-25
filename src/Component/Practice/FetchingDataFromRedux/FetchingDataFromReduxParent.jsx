@@ -34,16 +34,7 @@ export const FetchingDataFromReduxParent = () => {
               <FetchingDataFromReduxChild itemCurrent={item} key={item.id} />
             );
           })}
-        {/* {groupData &&
-        groupData.map((item) => {
-          return (
-            <div key={item.id}>
-              <li>{item.name}</li>
-              <img src={item.image} alt="images" width="100px" />
-              <p>{item.desc}</p>
-            </div>
-          );
-        })} */}
+
         {/* <table border="10">
         <tr>
           <th>SR No</th>
