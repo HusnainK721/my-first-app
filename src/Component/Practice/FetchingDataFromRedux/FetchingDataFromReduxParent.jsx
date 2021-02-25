@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { FetchingDataFromReduxChild } from "./FetchingDataFromReduxChild";
 import { useSelector } from "react-redux";
-import { getAllPosts } from "../../../State/Selector/userPostSelector";
+import { getAllGroups } from "../../../State/Selector/groupSelector";
 export const FetchingDataFromReduxParent = () => {
   // const [postData, setPostData] = useState();
   const [groupData, setGroupData] = useState();
-  const selector = useSelector(getAllPosts);
+  const selector = useSelector(getAllGroups);
   // useEffect(() => {
   //   setPostData(selector);
   // }, [selector]);
