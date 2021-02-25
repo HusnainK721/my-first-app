@@ -5,22 +5,25 @@ import { getAllGroups } from "../../../State/Selector/groupSelector";
 export const FetchingDataFromReduxParent = () => {
   // const [postData, setPostData] = useState();
   const [groupData, setGroupData] = useState();
+  const [addNewGroup, setAddNewGroup] = useState();
   const selector = useSelector(getAllGroups);
-  // useEffect(() => {
-  //   setPostData(selector);
-  // }, [selector]);
+
   useEffect(() => {
     setGroupData(selector);
   }, [selector]);
   return (
     <div>
-      {groupData &&
-        groupData.map((item) => {
-          return (
-            <FetchingDataFromReduxChild itemCurrent={item} key={item.id} />
-          );
-        })}
-      {/* {groupData &&
+      <div className="mt-2">
+        <input type="text" /> <button>Add Group</button>
+      </div>
+      <div>
+        {groupData &&
+          groupData.map((item) => {
+            return (
+              <FetchingDataFromReduxChild itemCurrent={item} key={item.id} />
+            );
+          })}
+        {/* {groupData &&
         groupData.map((item) => {
           return (
             <div key={item.id}>
@@ -30,8 +33,7 @@ export const FetchingDataFromReduxParent = () => {
             </div>
           );
         })} */}
-
-      {/* <table border="10">
+        {/* <table border="10">
         <tr>
           <th>SR No</th>
           <th>name</th>
@@ -65,6 +67,7 @@ export const FetchingDataFromReduxParent = () => {
             </div>
           );
         })} */}
+      </div>
     </div>
   );
 };
