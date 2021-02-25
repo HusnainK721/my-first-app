@@ -2,12 +2,15 @@ import React, { useEffect, useState } from "react";
 import { FetchingDataFromReduxChild } from "./FetchingDataFromReduxChild";
 import { useSelector } from "react-redux";
 import { getAllPosts } from "../../../State/Selector/userPostSelector";
-import { Card } from "react-bootstrap";
 export const FetchingDataFromReduxParent = () => {
-  const [postData, setPostData] = useState();
+  // const [postData, setPostData] = useState();
+  const [groupData, setGroupData] = useState();
   const selector = useSelector(getAllPosts);
+  // useEffect(() => {
+  //   setPostData(selector);
+  // }, [selector]);
   useEffect(() => {
-    setPostData(selector);
+    setGroupData(selector);
   }, [selector]);
   return (
     <div>
@@ -17,7 +20,7 @@ export const FetchingDataFromReduxParent = () => {
             <FetchingDataFromReduxChild itemCurrent={item} key={item.id} />
           );
         })}
-      {groupData &&
+      {/* {groupData &&
         groupData.map((item) => {
           return (
             <div key={item.id}>
@@ -26,9 +29,9 @@ export const FetchingDataFromReduxParent = () => {
               <p>{item.desc}</p>
             </div>
           );
-        })}
+        })} */}
 
-      <table border="10">
+      {/* <table border="10">
         <tr>
           <th>SR No</th>
           <th>name</th>
@@ -61,7 +64,7 @@ export const FetchingDataFromReduxParent = () => {
               <li>{item.description}</li>
             </div>
           );
-        })}
+        })} */}
     </div>
   );
 };
