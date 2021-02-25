@@ -8,12 +8,12 @@ const groupsDefaultState = {
     {
       name: "Learning Redux",
       image: "Assets/Person.png",
-      desc: "This Is First Group Created With Redux",
+      desc: "This Is Second Group Created With Redux",
     },
     {
       name: "React Developers",
       image: "logo512.png",
-      desc: "This Is First Group Created With Redux",
+      desc: "This Is Third Group Created With Redux",
     },
   ],
 };
