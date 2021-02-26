@@ -7,23 +7,22 @@ import { addNewGroup } from "../../../State/Action/groupActions";
 export const FetchingDataFromReduxParent = () => {
   // const [postData, setPostData] = useState();
   const [groupData, setGroupData] = useState();
-  const [addNewGroups, setAddNewGroups] = useState();
   const selector = useSelector(getAllGroups);
-  const dispatch = useDispatch();
-
   useEffect(() => {
     setGroupData(selector);
   }, [selector]);
 
+  const [storedDataFromInputBox, setStoredDataFromInputBox] = useState();
+  const dispatch = useDispatch();
   const handleNewGroup = () => {
-    dispatch(addNewGroup(addNewGroups));
+    dispatch(addNewGroup(storedDataFromInputBox));
   };
   return (
     <div>
       <div className="mt-2">
         <input
           type="text"
-          onChange={(event) => setAddNewGroups(event.target.value)}
+          onChange={(event) => setStoredDataFromInputBox(event.target.value)}
         />
         <button onClick={handleNewGroup}>Add Group</button>
       </div>
