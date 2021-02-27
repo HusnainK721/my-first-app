@@ -2,13 +2,6 @@ import React, { useState } from "react";
 import { OutputtingListDynamicallyChildF } from "./OutputtingListDynamicallyChildF";
 
 export const OutputtingListDynamicallyParentF = () => {
-  const defaultPersonData = [
-    { name: "Khwaja", age: 27 },
-    { name: "Roman", age: 12 },
-    { name: "Kashaf", age: 4 },
-    { name: "Kashaf", age: 4 },
-    { name: "Kashaf", age: 40 },
-  ];
   const [ShowPersonData, setShowPersonData] = useState(false);
   const [PersonData, setPersonData] = useState({
     defaultPersonData: [
