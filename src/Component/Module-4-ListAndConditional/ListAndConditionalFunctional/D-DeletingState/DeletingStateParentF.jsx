@@ -22,7 +22,7 @@ export const DeletingStateParentF = () => {
 
   const removePersonData = (indexPerson) => {
     const newPersonData = [...personData]; // called state immutability OR (Copying existing state)
-    newPersonData.splice(indexPerson, 1);
+    newPersonData.splice(indexPerson[0]);
     setPersonData(newPersonData);
   };
   return (
