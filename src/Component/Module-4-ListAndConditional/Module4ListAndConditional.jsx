@@ -2,10 +2,10 @@ import React from "react";
 import { RenderingContentConditionllyParent } from "./ListAndConditionalClass/A-RenderingContentConditionally/RenderingContentConditionllyParent";
 import { RenderingInJsWayParent } from "./ListAndConditionalClass/B-RenderingContentConditionally-js-way/RenderingInJsWayParent";
 import { Row, Col } from "react-bootstrap";
-// import { ConditionalRenderingParentInFunc } from "./ListAndConditionalFunctional/A-ConditionalRendering/ConditionalRenderingParentInFunc";
-// import { ConditionalRenderingParentInJSWayFunc } from "./ListAndConditionalFunctional/B-ConditionalRenderingInJSWay/ConditionalRenderingParentInJSWayFunc";
+import { ConditionalRenderingParentInFunc } from "./ListAndConditionalFunctional/A-ConditionalRendering/ConditionalRenderingParentInFunc";
+import { ConditionalRenderingParentInJSWayFunc } from "./ListAndConditionalFunctional/B-ConditionalRenderingInJSWay/ConditionalRenderingParentInJSWayFunc";
 // import { OutputtingListDynamicallyParentC } from "./ListAndConditionalClass/C-OutputtingListDynamically/OutputtingListDynamicallyParentC";
-// import { OutputtingListDynamicallyParentF } from "./ListAndConditionalFunctional/C-OutputtingListDynamicUsingMap/OutputtingListDynamicallyParentF";
+import { OutputtingListDynamicallyParentF } from "./ListAndConditionalFunctional/C-OutputtingListDynamicUsingMap/OutputtingListDynamicallyParentF";
 // import { DeletingStateParentC } from "./ListAndConditionalClass/D-DeletingState/DeletingStateParentC";
 // import { DeletingStateParentF } from "./ListAndConditionalFunctional/D-DeletingState/DeletingStateParentF";
 // // import { MapFunctionPracticeParent } from "../Practice/MapFunctionaPractice/MapFunctionPracticeParent";
@@ -16,8 +16,8 @@ import { FetchingDataFromReduxParent } from "../Practice/FetchingDataFromRedux/F
 export const Module4ListAndConditional = () => {
   return (
     <div>
-      {/* <Row>
-        <Col xs={6} lg={6} md={6}>
+      <Row>
+        {/* <Col xs={6} lg={6} md={6}>
           <div>
             <h4> Module 4 By Using Class Component</h4>
             <RenderingContentConditionllyParent />
@@ -26,7 +26,7 @@ export const Module4ListAndConditional = () => {
             <DeletingStateParentC />
             <ListAndKeysParentC />
           </div>
-        </Col>
+        </Col>*/}
 
         <Col xs={6} lg={6} md={6}>
           <div>
@@ -34,18 +34,18 @@ export const Module4ListAndConditional = () => {
             <ConditionalRenderingParentInFunc />
             <ConditionalRenderingParentInJSWayFunc />
             <OutputtingListDynamicallyParentF />
-            <DeletingStateParentF />
+            {/*<DeletingStateParentF /> */}
 
-            <ListAndKeysParentF />
+            {/* <ListAndKeysParentF /> */}
           </div>
         </Col>
-      </Row> */}
+      </Row>
       {/* <div>
         <h1>React Class Practice</h1>
         <MapFunctionPracticeParent />
         <FetchingDataFromJsonParent />
       </div> */}
-      <FetchingDataFromReduxParent />
+      {/* <FetchingDataFromReduxParent /> */}
     </div>
   );
 };

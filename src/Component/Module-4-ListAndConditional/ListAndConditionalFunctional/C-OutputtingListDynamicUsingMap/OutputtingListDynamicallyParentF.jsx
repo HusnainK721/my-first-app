@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { OutputtingListDynamicallyChildF } from "./OutputtingListDynamicallyChildF";
 
-export const OutputtingListDynamicallyParentF = (itemCurrent) => {
+export const OutputtingListDynamicallyParentF = () => {
   const defaultPersonData = [
     { name: "Khwaja", age: 27 },
     { name: "Roman", age: 12 },
@@ -10,13 +10,23 @@ export const OutputtingListDynamicallyParentF = (itemCurrent) => {
     { name: "Kashaf", age: 40 },
   ];
   const [ShowPersonData, setShowPersonData] = useState(false);
-  const [PersonData, setPersonData] = useState(defaultPersonData);
+  const [PersonData, setPersonData] = useState({
+    defaultPersonData: [
+      { name: "Khwaja", age: 27 },
+      { name: "Roman", age: 12 },
+      { name: "Kashaf", age: 4 },
+      { name: "Kashaf", age: 4 },
+      { name: "Kashaf", age: 40 },
+    ],
+  });
   const handleNameChange = () => {
     setPersonData({
-      person: [
-        { name: "Muhammad Khwaja", age: 28 },
-        { name: "Roman Khan", age: 28 },
-        { name: "Ayesha Kashaf", age: 28 },
+      defaultPersonData: [
+        { name: "Khwajaaaaa", age: 27 },
+        { name: "Roman", age: 12 },
+        { name: "Kashaf", age: 4 },
+        { name: "Kashaf", age: 4 },
+        { name: "Kashaf", age: 40 },
       ],
     });
   };
@@ -29,9 +39,9 @@ export const OutputtingListDynamicallyParentF = (itemCurrent) => {
       <button onClick={handleConditionalRendering}>
         Loading Dynamic Data Using .Map()
       </button>
-      {ShowPersonData ? (
+      {ShowPersonData && (
         <div>
-          {PersonData.map((itemCurrent) => {
+          {PersonData.defaultPersonData.map((itemCurrent) => {
             return (
               <OutputtingListDynamicallyChildF
                 name={itemCurrent.name}
@@ -42,7 +52,7 @@ export const OutputtingListDynamicallyParentF = (itemCurrent) => {
 
           <button onClick={handleNameChange}> Change State</button>
         </div>
-      ) : null}
+      )}
     </div>
   );
 };

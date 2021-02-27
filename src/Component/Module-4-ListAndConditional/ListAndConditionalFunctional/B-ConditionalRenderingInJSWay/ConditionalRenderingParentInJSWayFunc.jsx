@@ -33,9 +33,6 @@ export const ConditionalRenderingParentInJSWayFunc = () => {
     setShowPerson(!showPerson);
   };
 
-  // const style = {
-  //   backgroundColor: "pink",
-  // };
   let person = null;
   if (showPerson) {
     person = (
@@ -56,7 +53,6 @@ export const ConditionalRenderingParentInJSWayFunc = () => {
         <button onClick={switchNameHandler}>change local state</button>
       </div>
     );
-    // style.backgroundColor = "yellow";
   }
   return (
     <div>
