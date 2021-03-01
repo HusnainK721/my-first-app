@@ -52,11 +52,8 @@ export const ConditionalRenderingParentInFunc = () => {
             change={changeNameHandler}
           />
           <button onClick={switchNameHandler}>Click TO Change State 2</button>
-          <h1>this is conditional rendering</h1>
         </div>
       )}
-
-      <div></div>
     </div>
   );
 };
