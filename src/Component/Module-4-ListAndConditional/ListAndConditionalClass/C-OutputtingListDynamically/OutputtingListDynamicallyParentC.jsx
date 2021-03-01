@@ -30,6 +30,7 @@ export class OutputtingListDynamicallyParentC extends Component {
       ],
     });
   };
+
   showPerson = false;
 
   toggleNamePersonHandler = () => {
@@ -37,26 +38,38 @@ export class OutputtingListDynamicallyParentC extends Component {
     this.setState({ showPerson: !doesShow });
   };
   render() {
+    // applyinh css to button
+    const buttonStyle = {
+      backgroundColor: "green",
+    };
+    // Conditinally rendering div onClick of button
+    let person = null;
+    if (this.state.showPerson) {
+      person = (
+        <div>
+          {this.state.person.map((item) => {
+            return (
+              <OutputtingListDynamicallyChildC
+                name={item.name}
+                age={item.age}
+                change={this.inputHandler}
+              />
+            );
+          })}
+          <button onClick={this.changeNameHandler}>Change local State</button>
+        </div>
+      );
+      //  changing styles dynamically onCick of button
+      buttonStyle.backgroundColor = "red";
+    }
     return (
       <div>
         <p className="mt-2">2. Conditional Rendering & .Map Function </p>
-        <button onClick={this.toggleNamePersonHandler}>
+        <button onClick={this.toggleNamePersonHandler} style={buttonStyle}>
           Loading Dynamic Data using Map
         </button>
-        {this.state.showPerson ? (
-          <div>
-            {this.state.person.map((item) => {
-              return (
-                <OutputtingListDynamicallyChildC
-                  name={item.name}
-                  age={item.age}
-                  change={this.inputHandler}
-                />
-              );
-            })}
-            <button onClick={this.changeNameHandler}>Change local State</button>
-          </div>
-        ) : null}
+
+        {person}
       </div>
     );
   }

@@ -4,7 +4,7 @@ import { RenderingInJsWayParent } from "./ListAndConditionalClass/B-RenderingCon
 import { Row, Col } from "react-bootstrap";
 import { ConditionalRenderingParentInFunc } from "./ListAndConditionalFunctional/A-ConditionalRendering/ConditionalRenderingParentInFunc";
 import { ConditionalRenderingParentInJSWayFunc } from "./ListAndConditionalFunctional/B-ConditionalRenderingInJSWay/ConditionalRenderingParentInJSWayFunc";
-// import { OutputtingListDynamicallyParentC } from "./ListAndConditionalClass/C-OutputtingListDynamically/OutputtingListDynamicallyParentC";
+import { OutputtingListDynamicallyParentC } from "./ListAndConditionalClass/C-OutputtingListDynamically/OutputtingListDynamicallyParentC";
 import { OutputtingListDynamicallyParentF } from "./ListAndConditionalFunctional/C-OutputtingListDynamicUsingMap/OutputtingListDynamicallyParentF";
 // import { DeletingStateParentC } from "./ListAndConditionalClass/D-DeletingState/DeletingStateParentC";
 import { DeletingStateParentF } from "./ListAndConditionalFunctional/D-DeletingState/DeletingStateParentF";
@@ -17,16 +17,16 @@ export const Module4ListAndConditional = () => {
   return (
     <div>
       <Row>
-        {/* <Col xs={6} lg={6} md={6}>
+        <Col xs={6} lg={6} md={6}>
           <div>
             <h4> Module 4 By Using Class Component</h4>
-            <RenderingContentConditionllyParent />
-            <RenderingInJsWayParent />
+            {/* <RenderingContentConditionllyParent /> */}
+            {/* <RenderingInJsWayParent /> */}
             <OutputtingListDynamicallyParentC />
-            <DeletingStateParentC />
-            <ListAndKeysParentC />
+            {/* <DeletingStateParentC /> */}
+            {/* <ListAndKeysParentC /> */}
           </div>
-        </Col>*/}
+        </Col>
 
         <Col xs={6} lg={6} md={6}>
           <div>
