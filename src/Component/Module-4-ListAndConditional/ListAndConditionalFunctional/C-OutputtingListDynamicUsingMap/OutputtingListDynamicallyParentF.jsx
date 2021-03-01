@@ -39,11 +39,10 @@ export const OutputtingListDynamicallyParentF = () => {
         <div>
           {PersonData.defaultPersonData.map((itemCurrent) => {
             return (
-             
-              // <OutputtingListDynamicallyChildF
-              //   name={itemCurrent.name}
-              //   age={itemCurrent.age}
-              // />
+              <OutputtingListDynamicallyChildF
+                name={itemCurrent.name}
+                age={itemCurrent.age}
+              />
             );
           })}
 
