@@ -66,7 +66,7 @@ export class SettingStyleDynamicallyParentC extends Component {
       <div>
         <p className="mt-2">1. Setting Style Dynamically </p>
         <button onClick={this.toggleNamePersonHandler} style={buttonStyle}>
-          Loading Dynamic Data using Map
+          Setting Style Dynamically
         </button>
 
         {person}
