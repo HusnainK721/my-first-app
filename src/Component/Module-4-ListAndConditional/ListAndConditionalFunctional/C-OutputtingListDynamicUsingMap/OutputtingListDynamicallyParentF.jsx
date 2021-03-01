@@ -26,9 +26,7 @@ export const OutputtingListDynamicallyParentF = () => {
   const handleConditionalRendering = () => {
     setShowPersonData(!ShowPersonData);
   };
-  const styleLi = {
-    backgroundColor: "red",
-  };
+
   return (
     <div>
       <p className="mt-2">2. Dynmaic Loading Data & Conditional Rendering</p>
