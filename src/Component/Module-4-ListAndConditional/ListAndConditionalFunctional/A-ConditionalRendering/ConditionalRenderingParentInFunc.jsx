@@ -36,7 +36,7 @@ export const ConditionalRenderingParentInFunc = () => {
     <div>
       <p>1. Conditional Rendering</p>
       <button onClick={togglePersonHandler}>Conditional Rendering</button>
-      {showPerson ? (
+      {showPerson && (
         <div>
           <ConditionalRenderingChildInFunc
             name={personData.person[0].name}
@@ -52,8 +52,11 @@ export const ConditionalRenderingParentInFunc = () => {
             change={changeNameHandler}
           />
           <button onClick={switchNameHandler}>Click TO Change State 2</button>
+          <h1>this is conditional rendering</h1>
         </div>
-      ) : null}
+      )}
+
+      <div></div>
     </div>
   );
 };

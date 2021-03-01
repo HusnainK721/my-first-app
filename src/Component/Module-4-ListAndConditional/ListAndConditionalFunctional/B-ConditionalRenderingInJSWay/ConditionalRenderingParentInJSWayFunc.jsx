@@ -59,6 +59,7 @@ export const ConditionalRenderingParentInJSWayFunc = () => {
       <button onClick={togglePersonHandler} className="mt-2">
         Conditional Rendering in JS way
       </button>
+      {showPerson ? <div>sff sdfsdfsdf sddfsddf</div> : null}
 
       {person}
     </div>
