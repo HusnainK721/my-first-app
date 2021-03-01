@@ -48,12 +48,6 @@ export class ListAndKeysParentC extends Component {
     this.setState({ personData: personData });
   };
   render() {
-    const style = {
-      backgroundColor: "green",
-      color: "white",
-      cursor: "pointer",
-    };
-
     let displayPersonData = null;
     if (this.state.showPerson) {
       displayPersonData = (
@@ -74,15 +68,12 @@ export class ListAndKeysParentC extends Component {
           </button>
         </div>
       );
-      style.backgroundColor = "red";
     }
 
     return (
       <div>
         <p className="mt-2"> 4.List & Keys</p>
-        <button onClick={this.toggleNameHandler} style={style}>
-          List & Keys
-        </button>
+        <button onClick={this.toggleNameHandler}>List & Keys</button>
         {displayPersonData}
       </div>
     );
