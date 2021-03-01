@@ -39,9 +39,10 @@ export class SettingClassNameDynamicallyParentC extends Component {
     this.setState({ personData: personData });
   };
   render() {
-    const classes = {
+    const buttonStyle = {
       backgroundColor: "yellow",
     };
+
     let displayPersonData = null;
     if (this.state.showPerson) {
       displayPersonData = (
@@ -60,11 +61,23 @@ export class SettingClassNameDynamicallyParentC extends Component {
           </button>
         </div>
       );
+      buttonStyle.backgroundColor = "pink";
     }
+
+    // let classes = ["para-weight", "red"].join(" ");// default:-  dynamic applying css
+    // OR
+    let classes = [];
+    if (this.state.person.length <= 2) {
+      classes.push("para-color");
+    }
+    if (this.state.person.length <= 1) {
+      classes.push("para-wedth");
+    }
+
     return (
       <div>
-        <p className={classes}> 2. Setting className Dynamically</p>
-        <button onClick={this.toggleNameHandler}>
+        <p className={classes.join(" ")}> 2. Setting className Dynamically</p>
+        <button onClick={this.toggleNameHandler} style={buttonStyle}>
           {" "}
           Setting className Dynamically
         </button>
