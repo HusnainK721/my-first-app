@@ -6,12 +6,12 @@ import { ConditionalRenderingParentInFunc } from "./ListAndConditionalFunctional
 import { ConditionalRenderingParentInJSWayFunc } from "./ListAndConditionalFunctional/B-ConditionalRenderingInJSWay/ConditionalRenderingParentInJSWayFunc";
 import { OutputtingListDynamicallyParentC } from "./ListAndConditionalClass/C-OutputtingListDynamically/OutputtingListDynamicallyParentC";
 import { OutputtingListDynamicallyParentF } from "./ListAndConditionalFunctional/C-OutputtingListDynamicUsingMap/OutputtingListDynamicallyParentF";
-// import { DeletingStateParentC } from "./ListAndConditionalClass/D-DeletingState/DeletingStateParentC";
+import { DeletingStateParentC } from "./ListAndConditionalClass/D-DeletingState/DeletingStateParentC";
 import { DeletingStateParentF } from "./ListAndConditionalFunctional/D-DeletingState/DeletingStateParentF";
-// // import { MapFunctionPracticeParent } from "../Practice/MapFunctionaPractice/MapFunctionPracticeParent";
-// // import { FetchingDataFromJsonParent } from "../Practice/FetchingDataFromJSON/FetchingDataFromJsonParent";
-// import { ListAndKeysParentC } from "./ListAndConditionalClass/E-ListAndKeys/ListAndKeysParentC";
-// import { ListAndKeysParentF } from "./ListAndConditionalFunctional/E-ListAndKeys/ListAndKeysParentF";
+import { MapFunctionPracticeParent } from "../Practice/MapFunctionaPractice/MapFunctionPracticeParent";
+import { FetchingDataFromJsonParent } from "../Practice/FetchingDataFromJSON/FetchingDataFromJsonParent";
+import { ListAndKeysParentC } from "./ListAndConditionalClass/E-ListAndKeys/ListAndKeysParentC";
+import { ListAndKeysParentF } from "./ListAndConditionalFunctional/E-ListAndKeys/ListAndKeysParentF";
 import { FetchingDataFromReduxParent } from "../Practice/FetchingDataFromRedux/FetchingDataFromReduxParent";
 export const Module4ListAndConditional = () => {
   return (
@@ -20,11 +20,11 @@ export const Module4ListAndConditional = () => {
         <Col xs={6} lg={6} md={6}>
           <div>
             <h4> Module 4 By Using Class Component</h4>
-            {/* <RenderingContentConditionllyParent /> */}
-            {/* <RenderingInJsWayParent /> */}
+            <RenderingContentConditionllyParent />
+            <RenderingInJsWayParent />
             <OutputtingListDynamicallyParentC />
-            {/* <DeletingStateParentC /> */}
-            {/* <ListAndKeysParentC /> */}
+            <DeletingStateParentC />
+            <ListAndKeysParentC />
           </div>
         </Col>
 
@@ -36,7 +36,7 @@ export const Module4ListAndConditional = () => {
             <OutputtingListDynamicallyParentF />
             <DeletingStateParentF />
 
-            {/* <ListAndKeysParentF /> */}
+            <ListAndKeysParentF />
           </div>
         </Col>
       </Row>
