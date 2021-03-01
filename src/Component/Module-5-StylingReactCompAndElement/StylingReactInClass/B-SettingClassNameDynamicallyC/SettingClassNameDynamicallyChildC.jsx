@@ -4,7 +4,7 @@ export class SettingClassNameDynamicallyChildC extends Component {
   render() {
     return (
       <div>
-        <p onClick={this.props.clicked}>
+        <p onClick={this.props.delete}>
           I am {this.props.name} i am {this.props.age} year old
         </p>
         <input

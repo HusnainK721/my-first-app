@@ -1,75 +1,74 @@
 import React, { Component } from "react";
 import { SettingClassNameDynamicallyChildC } from "./SettingClassNameDynamicallyChildC";
-
+import "./SettingClassNameDynamically.css";
 export class SettingClassNameDynamicallyParentC extends Component {
   state = {
     person: [
-      { name: "Batman", age: 25 },
-      { name: "Superman", age: 30 },
-      { name: "Captain America", age: 56 },
+      { id: "khwaja1", name: "khwaja", age: 27 },
+      { id: "khwaja2", name: "Junaid", age: 28 },
+      { id: "khwaja3", name: "Dilshad", age: 29 },
+      { id: "khwaja4", name: "Sulaiman", age: 30 },
+      { id: "khwaja5", name: "Saleem", age: 31 },
     ],
   };
-
-  // onClick of button it will execute & Changing the existing state to new state
-
-  changeNameHandler = () => {
+  showPerson;
+  toggleNameHandler = () => {
+    const isShow = this.state.showPerson;
+    this.setState({ showPerson: !isShow });
+  };
+  switchNameHandler = () => {
     this.setState({
       person: [
-        { name: "Bruce", age: 25 },
-        { name: "Clark", age: 30 },
-        { name: "Steve", age: 20 },
+        { name: "khwaja Muhammad", age: 27 },
+        { name: "Junaid Lala", age: 28 },
+        { name: "Dilshad Khan", age: 29 },
+        { name: "Sulaiman Chause", age: 30 },
+        { name: "Saleem Shaikh", age: 31 },
       ],
     });
   };
-  inputHandler = (e) => {
-    this.setState({
-      person: [
-        { name: e.target.value, age: 25 },
-        { name: e.target.value, age: 30 },
-        { name: e.target.value, age: 20 },
-      ],
-    });
-  };
-
-  showPerson = false;
-
-  toggleNamePersonHandler = () => {
-    const doesShow = this.state.showPerson;
-    this.setState({ showPerson: !doesShow });
+  deleteStateHandler = (personDataIndex) => {
+    const personData = this.state.person;
+    // instead of above line you can write as follow:-
+    // 1. const personData= this.state.person.slice()===>>> it will copy original array & make changes in copied data
+    // OR
+    // 2. const personData=[...this.state.person]===>> this is latest feature of copying data (spread operator)
+    // this two method is called state immutability (copying existing state to new variable)
+    // now you are deleting the state from copied state instead of original state
+    personData.splice(personDataIndex, 1);
+    this.setState({ personData: personData });
   };
   render() {
-    // applyinh css to button
-    const buttonStyle = {
-      backgroundColor: "green",
+    const classes = {
+      backgroundColor: "yellow",
     };
-    // Conditinally rendering div onClick of button
-    let person = null;
+    let displayPersonData = null;
     if (this.state.showPerson) {
-      person = (
+      displayPersonData = (
         <div>
-          {this.state.person.map((item) => {
+          {this.state.person.map((item, index) => {
             return (
               <SettingClassNameDynamicallyChildC
                 name={item.name}
                 age={item.age}
-                change={this.inputHandler}
+                delete={() => this.deleteStateHandler(index)}
               />
             );
           })}
-          <button onClick={this.changeNameHandler}>Change local State</button>
+          <button onClick={this.switchNameHandler} className="mt-2">
+            Change State
+          </button>
         </div>
       );
-      //  changing styles dynamically onCick of button
-      buttonStyle.backgroundColor = "red";
     }
     return (
       <div>
-        <p className="mt-2">2. Setting className Dynamically </p>
-        <button onClick={this.toggleNamePersonHandler} style={buttonStyle}>
+        <p className={classes}> 2. Setting className Dynamically</p>
+        <button onClick={this.toggleNameHandler}>
+          {" "}
           Setting className Dynamically
         </button>
-
-        {person}
+        {displayPersonData}
       </div>
     );
   }
