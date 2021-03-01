@@ -4,15 +4,18 @@ import { SettingStyleDynamicallyParentC } from "./StylingReactInClass/A-SettingS
 export const Module5StylingReactComponent = () => {
   return (
     <React.Fragment>
+      <h1>4.Styling React Component </h1>
       <Row>
         <Col>
           <div>
-            Module 5 Using Class Component
+            <h4>Module 5 Using Class Component</h4>
             <SettingStyleDynamicallyParentC />
           </div>
         </Col>
         <Col>
-          <div>Module 5 Using Functional Component</div>
+          <div>
+            <h4>5.Module 5 Using Functional Component</h4>
+          </div>
         </Col>
       </Row>
     </React.Fragment>

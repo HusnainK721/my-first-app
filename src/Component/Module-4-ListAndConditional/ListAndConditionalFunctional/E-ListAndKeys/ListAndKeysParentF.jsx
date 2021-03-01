@@ -28,7 +28,7 @@ export const ListAndKeysParentF = ({ itemCurrent }) => {
 
   return (
     <div className="mt-2">
-      <p>3. Deleting State onClick of Button </p>
+      <p>4. Lists & Keys </p>
       <button onClick={toggleNameHandler}>Toggle & Delete Content</button>
       {showPerson ? (
         <div>
