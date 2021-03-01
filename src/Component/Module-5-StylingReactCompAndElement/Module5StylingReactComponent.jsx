@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { SettingStyleDynamicallyParentC } from "./StylingReactInClass/A-SettingStyleDynamicC/SettingStyleDynamicallyParentC";
+import { SettingStyleDynamicallyParentF } from "./StylingReactInFunctional/A-SettingStyleDynamicallyF/SettingStyleDynamicallyParentF";
 export const Module5StylingReactComponent = () => {
   return (
     <React.Fragment>
@@ -15,6 +16,7 @@ export const Module5StylingReactComponent = () => {
         <Col>
           <div>
             <h4>5.Module 5 Using Functional Component</h4>
+            <SettingStyleDynamicallyParentF />
           </div>
         </Col>
       </Row>
