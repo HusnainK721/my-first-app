@@ -53,9 +53,7 @@ export const SettingStyleDynamicallyParentF = () => {
       <button onClick={handleConditionalRendering} style={styleButton}>
         Loading Dynamic Data Using .Map()
       </button>
-      {/* {ShowPersonData && (
-        
-      )} */}
+
       {person}
     </div>
   );
