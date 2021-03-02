@@ -1,15 +1,16 @@
 import React, { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 import { OutputtingListDynamicallyChildF } from "./OutputtingListDynamicallyChildF";
 
 export const OutputtingListDynamicallyParentF = () => {
   const [ShowPersonData, setShowPersonData] = useState(false);
   const [PersonData, setPersonData] = useState({
     defaultPersonData: [
-      { name: "Khwaja", age: 27 },
-      { name: "Roman", age: 12 },
-      { name: "Kashaf", age: 4 },
-      { name: "Kashaf", age: 4 },
-      { name: "Kashaf", age: 40 },
+      { id: uuidv4(), name: "Khwaja", age: 27 },
+      { id: uuidv4(), name: "Roman", age: 12 },
+      { id: uuidv4(), name: "Kashaf", age: 4 },
+      { id: uuidv4(), name: "Kashaf", age: 4 },
+      { id: uuidv4(), name: "Kashaf", age: 40 },
     ],
   });
   const handleNameChange = () => {
@@ -40,6 +41,7 @@ export const OutputtingListDynamicallyParentF = () => {
               <OutputtingListDynamicallyChildF
                 name={itemCurrent.name}
                 age={itemCurrent.age}
+                key={itemCurrent.id}
               />
             );
           })}
