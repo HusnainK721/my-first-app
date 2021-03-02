@@ -49,7 +49,7 @@ export const SettingStyleDynamicallyParentF = () => {
   }
   return (
     <div>
-      <p className="mt-2">2. Dynmaic Loading Data & Conditional Rendering</p>
+      <p className="mt-2">1. Setting Dynamic Style </p>
       <button onClick={handleConditionalRendering} style={styleButton}>
         Loading Dynamic Data Using .Map()
       </button>

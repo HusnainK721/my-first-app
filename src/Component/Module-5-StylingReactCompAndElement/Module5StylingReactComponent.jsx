@@ -6,6 +6,7 @@ import { SettingClassNameDynamicallyParentC } from "./StylingReactInClass/B-Sett
 // Functional component exported here
 
 import { SettingStyleDynamicallyParentF } from "./StylingReactInFunctional/A-SettingStyleDynamicallyF/SettingStyleDynamicallyParentF";
+import { SettingClassNameDynamicallyParentF } from "./StylingReactInFunctional/B-SettingClassNameDynamicallyF/SettingClassNameDynamicallyParentF";
 export const Module5StylingReactComponent = () => {
   return (
     <React.Fragment>
@@ -22,6 +23,7 @@ export const Module5StylingReactComponent = () => {
           <div>
             <h4>5.Module 5 Using Functional Component</h4>
             <SettingStyleDynamicallyParentF />
+            <SettingClassNameDynamicallyParentF />
           </div>
         </Col>
       </Row>
