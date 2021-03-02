@@ -20,9 +20,9 @@ export const DeletingStateParentF = () => {
     setShowPerson(!showPerson);
   };
 
-  const removePersonData = (indexPerson) => {
+  const removePersonData = (index) => {
     const newPersonData = [...personData]; // called state immutability OR (Copying existing state)
-    newPersonData.splice(indexPerson, 1);
+    newPersonData.splice(index, 1);
     setPersonData(newPersonData);
   };
   return (
