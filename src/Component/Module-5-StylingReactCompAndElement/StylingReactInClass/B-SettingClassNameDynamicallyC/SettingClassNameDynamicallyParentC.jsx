@@ -78,8 +78,7 @@ export class SettingClassNameDynamicallyParentC extends Component {
       <div>
         <p className={classes.join(" ")}> 2. Setting className Dynamically</p>
         <button onClick={this.toggleNameHandler} style={buttonStyle}>
-          {" "}
-          Setting className Dynamically
+          Delete To Apply CSS
         </button>
         {displayPersonData}
       </div>

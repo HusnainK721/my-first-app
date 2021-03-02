@@ -66,7 +66,7 @@ export const SettingClassNameDynamicallyParentF = () => {
     <div className="mt-2">
       <p className={classes.join(" ")}>2.Setting className Dynamically </p>
       <button onClick={toggleNameHandler} style={buttonStyle}>
-        Toggle & Delete Content
+        Delete To Apply CSS
       </button>
 
       {person}
