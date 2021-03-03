@@ -76,9 +76,9 @@ class AddingAndUsingRadiumParentC extends Component {
 
     return (
       <div>
-        <p className={classes.join(" ")}> 2. Setting className Dynamically</p>
+        <p className={classes.join(" ")}> 3. Adding & Using Radium</p>
         <button onClick={this.toggleNameHandler} style={buttonStyle}>
-          Delete To Apply CSS
+          Added Redium
         </button>
         {displayPersonData}
       </div>
