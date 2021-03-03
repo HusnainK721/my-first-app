@@ -1,8 +1,13 @@
 import React, { Component } from "react";
+import AddingAndUsingRadiumChildC from "./AddingAndUsingRadiumChildC";
 
 class AddingAndUsingRadiumParentC extends Component {
   render() {
-    return <div></div>;
+    return (
+      <div>
+        <AddingAndUsingRadiumChildC />
+      </div>
+    );
   }
 }
 
