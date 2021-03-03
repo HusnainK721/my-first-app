@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { SettingClassNameDynamicallyChildC } from "./SettingClassNameDynamicallyChildC";
-import "./SettingClassNameDynamically.css";
+import { AddingAndUsingRadiumChildC } from "./AddingAndUsingRadiumChildC";
+
 class AddingAndUsingRadiumParentC extends Component {
   state = {
     person: [
@@ -49,7 +49,7 @@ class AddingAndUsingRadiumParentC extends Component {
         <div>
           {this.state.person.map((item, index) => {
             return (
-              <SettingClassNameDynamicallyChildC
+              <AddingAndUsingRadiumChildC
                 name={item.name}
                 age={item.age}
                 delete={() => this.deleteStateHandler(index)}
