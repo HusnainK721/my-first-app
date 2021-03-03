@@ -71,18 +71,18 @@ class AddingAndUsingRadiumParentC extends Component {
 
     // let classes = ["para-weight", "red"].join(" ");// default:-  dynamic applying css
     // OR
-    let classes = [];
-    if (this.state.person.length <= 2) {
-      classes.push("para-color");
-    }
-    if (this.state.person.length <= 1) {
-      classes.push("para-wedth");
-    }
+    // let classes = [];
+    // if (this.state.person.length <= 2) {
+    //   classes.push("para-color");
+    // }
+    // if (this.state.person.length <= 1) {
+    //   classes.push("para-wedth");
+    // }
 
     return (
       <styleRoot>
         <div>
-          <p className={classes.join(" ")}> 3. Adding & Using Radium</p>
+          <p> 3. Adding & Using Radium</p>
           <button onClick={this.toggleNameHandler} style={buttonStyle}>
             Added Redium
           </button>
