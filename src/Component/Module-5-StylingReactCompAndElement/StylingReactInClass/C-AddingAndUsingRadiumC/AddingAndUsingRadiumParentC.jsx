@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { SettingClassNameDynamicallyChildC } from "./SettingClassNameDynamicallyChildC";
 import "./SettingClassNameDynamically.css";
-export class SettingClassNameDynamicallyParentC extends Component {
+class AddingAndUsingRadiumParentC extends Component {
   state = {
     person: [
       { id: "khwaja1", name: "khwaja", age: 27 },
@@ -85,3 +85,4 @@ export class SettingClassNameDynamicallyParentC extends Component {
     );
   }
 }
+export default AddingAndUsingRadiumParentC;
