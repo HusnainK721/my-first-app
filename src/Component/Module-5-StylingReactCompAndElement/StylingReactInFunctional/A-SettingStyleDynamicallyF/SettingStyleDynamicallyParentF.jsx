@@ -28,6 +28,7 @@ export const SettingStyleDynamicallyParentF = () => {
   };
   const styleButton = {
     backgroundColor: "green",
+    boxShadow: "10px 30px 40px red",
   };
   let person = null;
   if (ShowPersonData) {
@@ -46,6 +47,8 @@ export const SettingStyleDynamicallyParentF = () => {
       </div>
     );
     styleButton.backgroundColor = "red";
+    styleButton.boxShadow = "10px 30px 40px black";
+    styleButton.border = "5px solid blue";
   }
   return (
     <div>
