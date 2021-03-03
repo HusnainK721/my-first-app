@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { AddingAndUsingRadiumChildC } from "./AddingAndUsingRadiumChildC";
+import AddingAndUsingRadiumChildC from "./AddingAndUsingRadiumChildC";
 
 class AddingAndUsingRadiumParentC extends Component {
   state = {

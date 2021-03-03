@@ -3,6 +3,7 @@ import { Row, Col } from "react-bootstrap";
 // Class component exported here
 import { SettingStyleDynamicallyParentC } from "./StylingReactInClass/A-SettingStyleDynamicC/SettingStyleDynamicallyParentC";
 import { SettingClassNameDynamicallyParentC } from "./StylingReactInClass/B-SettingClassNameDynamicallyC/SettingClassNameDynamicallyParentC";
+import AddingAndUsingRadiumParentC from "./StylingReactInClass/C-AddingAndUsingRadiumC/AddingAndUsingRadiumParentC";
 // Functional component exported here
 
 import { SettingStyleDynamicallyParentF } from "./StylingReactInFunctional/A-SettingStyleDynamicallyF/SettingStyleDynamicallyParentF";
@@ -17,6 +18,7 @@ export const Module5StylingReactComponent = () => {
             <h4>Module 5 Using Class Component</h4>
             <SettingStyleDynamicallyParentC />
             <SettingClassNameDynamicallyParentC />
+            <AddingAndUsingRadiumParentC />
           </div>
         </Col>
         <Col>
