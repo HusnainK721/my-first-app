@@ -34,9 +34,13 @@ class AddingAndUsingRadiumParentC extends Component {
     this.setState({ personData: personData });
   };
   render() {
+    //   by default css of button
     const buttonStyle = {
       backgroundColor: "yellow",
-      boxShadow: "0 2px 3px #ccc",
+      ":hover": {
+        backgroundColor: "lightgreen",
+        color: "red",
+      },
     };
 
     let displayPersonData = null;
@@ -57,7 +61,12 @@ class AddingAndUsingRadiumParentC extends Component {
           </button>
         </div>
       );
+      //   onClick css of button
       buttonStyle.backgroundColor = "pink";
+      buttonStyle[":hover"] = {
+        backgroundColor: "black",
+        color: "yellow",
+      };
     }
 
     // let classes = ["para-weight", "red"].join(" ");// default:-  dynamic applying css
