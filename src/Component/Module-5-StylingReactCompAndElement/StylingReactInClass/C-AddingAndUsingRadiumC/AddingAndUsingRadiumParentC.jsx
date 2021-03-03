@@ -36,6 +36,7 @@ class AddingAndUsingRadiumParentC extends Component {
   render() {
     const buttonStyle = {
       backgroundColor: "yellow",
+      boxShadow: "0 2px 3px #ccc",
     };
 
     let displayPersonData = null;
