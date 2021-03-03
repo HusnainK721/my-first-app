@@ -64,18 +64,18 @@ export class SettingClassNameDynamicallyParentC extends Component {
       buttonStyle.backgroundColor = "pink";
     }
 
-    // let classes = ["para-weight", "red"].join(" ");// default:-  dynamic applying css
+    // let classes = ["para1", "para2"].join(" "); // default:-  dynamic applying css
     // OR
     let classes = [];
     if (this.state.person.length <= 2) {
-      classes.push("para-color");
+      classes.push("para1");
     }
     if (this.state.person.length <= 1) {
-      classes.push("para-wedth");
+      classes.push("para2");
     }
 
     return (
-      <div>
+      <div className="mt-2 ml-2">
         <p className={classes.join(" ")}> 2. Setting className Dynamically</p>
         <button onClick={this.toggleNameHandler} style={buttonStyle}>
           Delete To Apply CSS
