@@ -29,12 +29,6 @@ class AddingAndUsingRadiumParentC extends Component {
   };
   deleteStateHandler = (personDataIndex) => {
     const personData = this.state.person;
-    // instead of above line you can write as follow:-
-    // 1. const personData= this.state.person.slice()===>>> it will copy original array & make changes in copied data
-    // OR
-    // 2. const personData=[...this.state.person]===>> this is latest feature of copying data (spread operator)
-    // this two method is called state immutability (copying existing state to new variable)
-    // now you are deleting the state from copied state instead of original state
     personData.splice(personDataIndex, 1);
     this.setState({ personData: personData });
   };
