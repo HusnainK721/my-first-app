@@ -28,7 +28,7 @@ export class DeletingStateParentC extends Component {
     });
   };
   deleteStateHandler = (personDataIndex) => {
-    const personData = this.state.person;
+    const personData = [...this.state.person];
     // instead of above line you can write as follow:-
     // 1. const personData= this.state.person.slice()===>>> it will copy original array & make changes in copied data
     // OR
