@@ -8,9 +8,9 @@ class AddingAndUsingRadiumChildC extends Component {
       padding: "15px",
       margin: "10px",
 
-      // '@media(min-width:"500px")': {
-      //   width: "350px",
-      // },
+      '@media(min-width:"500px")': {
+        width: "250px",
+      },
     };
     return (
       <div style={divStyle}>
