@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import AddingAndUsingRadiumChildC from "./AddingAndUsingRadiumChildC";
+import Radium from "radium";
 
 class AddingAndUsingRadiumParentC extends Component {
   state = {
@@ -79,4 +80,4 @@ class AddingAndUsingRadiumParentC extends Component {
     );
   }
 }
-export default AddingAndUsingRadiumParentC;
+export default Radium(AddingAndUsingRadiumParentC);
