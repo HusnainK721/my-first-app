@@ -26,9 +26,14 @@ export const SettingStyleDynamicallyParentF = () => {
   const handleConditionalRendering = () => {
     setShowPersonData(!ShowPersonData);
   };
-  const styleButton = {
-    backgroundColor: "green",
-    boxShadow: "10px 30px 40px red",
+  // const styleButton = {
+  //   backgroundColor: "green",
+  //   boxShadow: "10px 30px 40px red",
+  // };
+
+  let buttonStyle = {
+    backgroundColor: "lightblue",
+    boxShadow: "5px 10px 15px black",
   };
   let person = null;
   if (ShowPersonData) {
@@ -46,14 +51,17 @@ export const SettingStyleDynamicallyParentF = () => {
         <button onClick={handleNameChange}> Change State</button>
       </div>
     );
-    styleButton.backgroundColor = "red";
-    styleButton.boxShadow = "10px 30px 40px black";
-    styleButton.border = "5px solid blue";
+    buttonStyle.backgroundColor = "black";
+    buttonStyle.color = "white";
+    // styleButton.backgroundColor = "red";
+    // styleButton.boxShadow = "10px 30px 40px black";
+    // styleButton.border = "5px solid blue";
   }
+
   return (
     <div>
       <p className="mt-2">1. Setting Dynamic Style </p>
-      <button onClick={handleConditionalRendering} style={styleButton}>
+      <button onClick={handleConditionalRendering} style={buttonStyle}>
         Loading Dynamic Data Using .Map()
       </button>
 
