@@ -18,7 +18,6 @@ export const Module5StylingReactComponent = () => {
             <h4>Module 5 Using Class Component</h4>
             <SettingStyleDynamicallyParentC />
             <SettingClassNameDynamicallyParentC />
-            <AddingAndUsingRadiumParentC />
           </div>
         </Col>
         <Col>
@@ -29,6 +28,7 @@ export const Module5StylingReactComponent = () => {
           </div>
         </Col>
       </Row>
+      <AddingAndUsingRadiumParentC />
     </React.Fragment>
   );
 };

@@ -4,12 +4,13 @@ class AddingAndUsingRadiumChildC extends Component {
   render() {
     const divStyle = {
       boxShadow: "0 2px 3px #ccc",
-      width: "60%",
+      width: "40%",
       padding: "15px",
       margin: "10px",
-      '@media(min-width:"500px")': {
-        width: "350px",
-      },
+
+      // '@media(min-width:"500px")': {
+      //   width: "350px",
+      // },
     };
     return (
       <div style={divStyle}>
