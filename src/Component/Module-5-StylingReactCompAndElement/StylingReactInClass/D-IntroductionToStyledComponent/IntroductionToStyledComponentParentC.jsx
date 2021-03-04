@@ -41,15 +41,6 @@ class IntroductionToStyledComponentParentC extends Component {
     this.setState({ personData: personData });
   };
   render() {
-    //   by default css of button
-    // const buttonStyle = {
-    //   backgroundColor: "blue",
-    //   "&:hover": {
-    //     backgroundColor: "lightgreen",
-    //     color: "red",
-    //   },
-    // };
-
     let displayPersonData = null;
     if (this.state.showPerson) {
       displayPersonData = (
