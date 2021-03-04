@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Radium from "radium";
+import Radium, { StyleRoot } from "radium";
 class AddingAndUsingRadiumChildC extends Component {
   render() {
     const divStyle = {
@@ -13,16 +13,18 @@ class AddingAndUsingRadiumChildC extends Component {
       },
     };
     return (
-      <div style={divStyle}>
-        <p onClick={this.props.delete}>
-          I am {this.props.name} i am {this.props.age} year old
-        </p>
-        <input
-          type="text"
-          onChange={this.props.change}
-          value={this.props.name}
-        />
-      </div>
+      <StyleRoot>
+        <div style={divStyle}>
+          <p onClick={this.props.delete}>
+            I am {this.props.name} i am {this.props.age} year old
+          </p>
+          <input
+            type="text"
+            onChange={this.props.change}
+            value={this.props.name}
+          />
+        </div>
+      </StyleRoot>
     );
   }
 }
