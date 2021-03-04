@@ -4,10 +4,11 @@ import styled from "styled-components";
 
 const StyledButton = styled.button`
   background-color: ${(props) => (props.any ? "green" : "red")};
-  &:hover {
-         background-color: ${(props) => (props.any ? "lightgreen" : "salmon")};
-         color: black;
-       },
+  // &:hover {
+  //        background-color: ${(props) =>
+    props.any ? "lightgreen" : "salmon"};
+  //        color: black;
+  //      },
 `;
 class IntroductionToStyledComponentParentC extends Component {
   state = {
