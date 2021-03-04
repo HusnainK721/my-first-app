@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Radium from "radium";
 class AddingAndUsingRadiumChildC extends Component {
   render() {
     const divStyle = {
@@ -9,7 +9,7 @@ class AddingAndUsingRadiumChildC extends Component {
       margin: "10px",
 
       '@media(min-width:"500px")': {
-        width: "250px",
+        width: "450px",
       },
     };
     return (
@@ -26,4 +26,4 @@ class AddingAndUsingRadiumChildC extends Component {
     );
   }
 }
-export default AddingAndUsingRadiumChildC;
+export default Radium(AddingAndUsingRadiumChildC);

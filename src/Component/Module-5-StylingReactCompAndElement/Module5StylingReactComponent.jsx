@@ -4,10 +4,12 @@ import { Row, Col } from "react-bootstrap";
 import { SettingStyleDynamicallyParentC } from "./StylingReactInClass/A-SettingStyleDynamicC/SettingStyleDynamicallyParentC";
 import { SettingClassNameDynamicallyParentC } from "./StylingReactInClass/B-SettingClassNameDynamicallyC/SettingClassNameDynamicallyParentC";
 import AddingAndUsingRadiumParentC from "./StylingReactInClass/C-AddingAndUsingRadiumC/AddingAndUsingRadiumParentC";
+import IntroductionToStyledComponentParentC from "./StylingReactInClass/D-IntroductionToStyledComponent/IntroductionToStyledComponentParentC";
 // Functional component exported here
 
 import { SettingStyleDynamicallyParentF } from "./StylingReactInFunctional/A-SettingStyleDynamicallyF/SettingStyleDynamicallyParentF";
 import { SettingClassNameDynamicallyParentF } from "./StylingReactInFunctional/B-SettingClassNameDynamicallyF/SettingClassNameDynamicallyParentF";
+import AddingAndUsingRadiumParentF from "./StylingReactInFunctional/C-AddingAndUsingRadium/AddingAndUsingRadiumParentF";
 export const Module5StylingReactComponent = () => {
   return (
     <React.Fragment>
@@ -19,6 +21,7 @@ export const Module5StylingReactComponent = () => {
             <SettingStyleDynamicallyParentC />
             <SettingClassNameDynamicallyParentC />
             <AddingAndUsingRadiumParentC />
+            <IntroductionToStyledComponentParentC />
           </div>
         </Col>
         <Col>
@@ -26,6 +29,7 @@ export const Module5StylingReactComponent = () => {
             <h4>5.Module 5 Using Functional Component</h4>
             <SettingStyleDynamicallyParentF />
             <SettingClassNameDynamicallyParentF />
+            <AddingAndUsingRadiumParentF />
           </div>
         </Col>
       </Row>
