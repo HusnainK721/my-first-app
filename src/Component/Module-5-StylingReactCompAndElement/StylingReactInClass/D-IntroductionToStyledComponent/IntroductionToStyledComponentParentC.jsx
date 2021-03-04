@@ -1,6 +1,13 @@
 import React, { Component } from "react";
 import IntroductionToStyledComponentChildC from "./IntroductionToStyledComponentChildC";
 import styled from "styled-components";
+
+const StyledButton = styled.button` 
+background-color: blue;
+"&:hover": {
+  background-color: lightgreen;
+  color: red;
+`;
 class IntroductionToStyledComponentParentC extends Component {
   state = {
     person: [
@@ -34,13 +41,13 @@ class IntroductionToStyledComponentParentC extends Component {
   };
   render() {
     //   by default css of button
-    const buttonStyle = {
-      backgroundColor: "blue",
-      "&:hover": {
-        backgroundColor: "lightgreen",
-        color: "red",
-      },
-    };
+    // const buttonStyle = {
+    //   backgroundColor: "blue",
+    //   "&:hover": {
+    //     backgroundColor: "lightgreen",
+    //     color: "red",
+    //   },
+    // };
 
     let displayPersonData = null;
     if (this.state.showPerson) {
@@ -61,11 +68,11 @@ class IntroductionToStyledComponentParentC extends Component {
         </div>
       );
       //   onClick css of button
-      buttonStyle.backgroundColor = "pink";
-      buttonStyle[":hover"] = {
-        backgroundColor: "black",
-        color: "yellow",
-      };
+      //   buttonStyle.backgroundColor = "pink";
+      //   buttonStyle[":hover"] = {
+      //     backgroundColor: "black",
+      //     color: "yellow",
+      //   };
     }
 
     // let classes = ["para-weight", "red"].join(" ");// default:-  dynamic applying css
@@ -81,9 +88,7 @@ class IntroductionToStyledComponentParentC extends Component {
     return (
       <div>
         <p> 4. Introduction To Styled Component</p>
-        <button onClick={this.toggleNameHandler} style={buttonStyle}>
-          styled-Component
-        </button>
+        <button onClick={this.toggleNameHandler}>styled-Component</button>
         {displayPersonData}
       </div>
     );
