@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import AddingAndUsingRadiumChildC from "./AddingAndUsingRadiumChildC";
-import Radium, { StyleRoot } from "radium";
+import Radium from "radium";
 
 class AddingAndUsingRadiumParentC extends Component {
   state = {
@@ -80,15 +80,15 @@ class AddingAndUsingRadiumParentC extends Component {
     // }
 
     return (
-      <StyleRoot>
-        <div>
-          <p> 3. Adding & Using Radium</p>
-          <button onClick={this.toggleNameHandler} style={buttonStyle}>
-            Added Redium
-          </button>
-          {displayPersonData}
-        </div>
-      </StyleRoot>
+      // <StyleRoot>
+      <div>
+        <p> 3. Adding & Using Radium</p>
+        <button onClick={this.toggleNameHandler} style={buttonStyle}>
+          Added Radium
+        </button>
+        {displayPersonData}
+      </div>
+      // </StyleRoot>
     );
   }
 }
