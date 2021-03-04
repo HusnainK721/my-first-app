@@ -62,16 +62,6 @@ class IntroductionToStyledComponentParentC extends Component {
       );
     }
 
-    // let classes = ["para-weight", "red"].join(" ");// default:-  dynamic applying css
-    // OR
-    // let classes = [];
-    // if (this.state.person.length <= 2) {
-    //   classes.push("para-color");
-    // }
-    // if (this.state.person.length <= 1) {
-    //   classes.push("para-wedth");
-    // }
-
     return (
       <div>
         <p> 4. Introduction To Styled Component</p>
