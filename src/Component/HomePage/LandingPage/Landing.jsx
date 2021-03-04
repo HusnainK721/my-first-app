@@ -31,13 +31,14 @@ export const Landing = () => {
         <FooterSection />
         {/* <CounterPractice /> */}
       </div>
-      <div>
+      {/* <div>
         <Module4ListAndConditional />
       </div>
       <hr />
       <div>
         <Module5StylingReactComponent />
-      </div>
+      </div> */}
+      <RadiumPracticeParent />
     </React.Fragment>
   );
 };
