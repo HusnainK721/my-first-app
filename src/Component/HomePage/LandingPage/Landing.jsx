@@ -33,11 +33,11 @@ export const Landing = () => {
       </div>
       {/* <div>
         <Module4ListAndConditional />
-      </div>
+      </div>*/}
       <hr />
       <div>
         <Module5StylingReactComponent />
-      </div> */}
+      </div>
       <RadiumPracticeParent />
     </React.Fragment>
   );

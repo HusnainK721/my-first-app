@@ -2,12 +2,26 @@ import React, { Component } from "react";
 import IntroductionToStyledComponentChildC from "./IntroductionToStyledComponentChildC";
 import styled from "styled-components";
 
+// const StyledButton = styled.button`
+//   background-color: ${(props) => (props.any ? "green" : "red")};
+//    &:hover {
+//           background-color: ${(props) => (props.any ? "lightgreen" : "salmon")};
+//           color: black;
+//         },
+// `;
 const StyledButton = styled.button`
-  background-color: ${(props) => (props.any ? "green" : "red")};
+  background-color: red;
    &:hover {
-          background-color: ${(props) => (props.any ? "lightgreen" : "salmon")};
+          background-color: green;
           color: black;
         },
+`;
+
+const StyledA = styled.a`
+  color: yellow;
+  &:hover {
+    color: red;
+  }
 `;
 class IntroductionToStyledComponentParentC extends Component {
   state = {
@@ -72,6 +86,13 @@ class IntroductionToStyledComponentParentC extends Component {
           styled-Component
         </StyledButton>
         {displayPersonData}
+        <button>testing</button>
+        <StyledButton>testing</StyledButton>
+
+        <input type="" />
+        <p>jhdgjf</p>
+        <StyledButton>second</StyledButton>
+        <StyledA>this is a anchor</StyledA>
       </div>
     );
   }
