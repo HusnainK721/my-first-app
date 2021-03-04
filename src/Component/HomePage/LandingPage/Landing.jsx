@@ -8,9 +8,10 @@ import { FooterSection } from "../../E-FooterSection/FooterSection";
 import { Module4ListAndConditional } from "../../Module-4-ListAndConditional/Module4ListAndConditional";
 // all module 5 exported here
 import { Module5StylingReactComponent } from "../../Module-5-StylingReactCompAndElement/Module5StylingReactComponent";
-// import { CounterPractice } from "../../Practice/UseStatePractice/CounterPractice/CounterPractice";
 
 // All Practice Component Exported Here
+import AllPractice from "../../Practice/AllPractice";
+// import { CounterPractice } from "../../Practice/UseStatePractice/CounterPractice/CounterPractice";
 // import { FetchingDataFromReduxParent } from "../../Practice/FetchingDataFromRedux/FetchingDataFromReduxParent";
 // import { MapFunctionPracticeParent } from "../../Practice/MapFunctionaPractice/MapFunctionPracticeParent";
 import RadiumPracticeParent from "../../Practice/RadiumPractice/RadiumPracticeParent";
@@ -38,7 +39,8 @@ export const Landing = () => {
       <div>
         <Module5StylingReactComponent />
       </div>
-      <RadiumPracticeParent />
+      <AllPractice />
+      {/* <RadiumPracticeParent /> */}
     </React.Fragment>
   );
 };
