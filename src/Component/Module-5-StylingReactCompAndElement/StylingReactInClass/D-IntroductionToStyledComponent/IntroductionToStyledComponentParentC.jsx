@@ -3,7 +3,11 @@ import IntroductionToStyledComponentChildC from "./IntroductionToStyledComponent
 import styled from "styled-components";
 
 const StyledButton = styled.button`
-  background-color: red;
+  background-color: ${(props) => (props.any ? "green" : "red")};
+  &:hover {
+         background-color: ${(props) => (props.any ? "lightgreen" : "salmon")};
+         color: black;
+       },
 `;
 class IntroductionToStyledComponentParentC extends Component {
   state = {
@@ -86,7 +90,10 @@ class IntroductionToStyledComponentParentC extends Component {
     return (
       <div>
         <p> 4. Introduction To Styled Component</p>
-        <StyledButton onClick={this.toggleNameHandler}>
+        <StyledButton
+          any={this.state.showPerson}
+          onClick={this.toggleNameHandler}
+        >
           styled-Component
         </StyledButton>
         {displayPersonData}
