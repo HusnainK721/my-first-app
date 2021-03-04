@@ -60,12 +60,6 @@ class IntroductionToStyledComponentParentC extends Component {
           </button>
         </div>
       );
-      //   onClick css of button
-      //   buttonStyle.backgroundColor = "pink";
-      //   buttonStyle[":hover"] = {
-      //     backgroundColor: "black",
-      //     color: "yellow",
-      //   };
     }
 
     // let classes = ["para-weight", "red"].join(" ");// default:-  dynamic applying css
