@@ -10,9 +10,14 @@ const RadiumPracticeParent = () => {
       boxShadow: "0 0 20 green",
     },
   };
+  const styledDiv = {
+    border: "solid 2px lightblue",
+    boxShadow: "0 2px 5px black",
+    width: "60%",
+  };
   return (
     <div>
-      <div>
+      <div style={styledDiv}>
         <h1>hiiiiiiiiiiiii</h1>
         <p>This is radium practice</p>
         <i>first install radium :- npm install radium --save</i>
