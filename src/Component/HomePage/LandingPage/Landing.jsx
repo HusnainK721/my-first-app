@@ -13,7 +13,7 @@ import { Module5StylingReactComponent } from "../../Module-5-StylingReactCompAnd
 // All Practice Component Exported Here
 // import { FetchingDataFromReduxParent } from "../../Practice/FetchingDataFromRedux/FetchingDataFromReduxParent";
 // import { MapFunctionPracticeParent } from "../../Practice/MapFunctionaPractice/MapFunctionPracticeParent";
-
+import RadiumPracticeParent from "../../Practice/RadiumPractice/RadiumPracticeParent";
 export const Landing = () => {
   return (
     <React.Fragment>

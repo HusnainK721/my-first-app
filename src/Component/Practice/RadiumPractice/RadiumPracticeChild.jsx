@@ -1,7 +1,7 @@
 import React from "react";
 
 const RadiumPracticeChild = () => {
-  return <div>hiiiiiiiiiiiii</div>;
+  return;
 };
 
 export default RadiumPracticeChild;
