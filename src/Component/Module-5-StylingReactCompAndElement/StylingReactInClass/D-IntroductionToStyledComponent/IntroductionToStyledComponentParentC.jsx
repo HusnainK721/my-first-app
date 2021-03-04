@@ -2,11 +2,8 @@ import React, { Component } from "react";
 import IntroductionToStyledComponentChildC from "./IntroductionToStyledComponentChildC";
 import styled from "styled-components";
 
-const StyledButton = styled.button` 
-background-color: blue;
-"&:hover": {
-  background-color: lightgreen;
-  color: red;
+const StyledButton = styled.button`
+  background-color: red;
 `;
 class IntroductionToStyledComponentParentC extends Component {
   state = {
@@ -62,6 +59,7 @@ class IntroductionToStyledComponentParentC extends Component {
               />
             );
           })}
+          {/* <button onClick={this.switchNameHandler} className="mt-2"> */}
           <button onClick={this.switchNameHandler} className="mt-2">
             Change State
           </button>
@@ -88,7 +86,9 @@ class IntroductionToStyledComponentParentC extends Component {
     return (
       <div>
         <p> 4. Introduction To Styled Component</p>
-        <button onClick={this.toggleNameHandler}>styled-Component</button>
+        <StyledButton onClick={this.toggleNameHandler}>
+          styled-Component
+        </StyledButton>
         {displayPersonData}
       </div>
     );
