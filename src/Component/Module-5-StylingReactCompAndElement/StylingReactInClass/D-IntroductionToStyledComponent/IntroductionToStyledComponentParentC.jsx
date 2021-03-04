@@ -86,13 +86,6 @@ class IntroductionToStyledComponentParentC extends Component {
           styled-Component
         </StyledButton>
         {displayPersonData}
-        <button>testing</button>
-        <StyledButton>testing</StyledButton>
-
-        <input type="" />
-        <p>jhdgjf</p>
-        <StyledButton>second</StyledButton>
-        <StyledA>this is a anchor</StyledA>
       </div>
     );
   }
