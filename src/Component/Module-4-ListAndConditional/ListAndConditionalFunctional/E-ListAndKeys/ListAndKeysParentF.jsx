@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ListAndKeysChildF } from "./ListAndKeysChildF";
-export const ListAndKeysParentF = ({ itemCurrent }) => {
+export const ListAndKeysParentF = () => {
   const defaultPerson = [
     { id: "khwaja3", name: "Rehan", age: 20 },
     { id: "khwaja1", name: "khwaja", age: 27 },
@@ -39,7 +39,7 @@ export const ListAndKeysParentF = ({ itemCurrent }) => {
                 name={item.name}
                 age={item.age}
                 key={item.id}
-                clicked={removePersonData}
+                clicked={() => removePersonData(index)}
               />
             );
           })}
