@@ -29,7 +29,7 @@ export const ListAndKeysParentF = ({ itemCurrent }) => {
   return (
     <div className="mt-2">
       <p>4. Lists & Keys </p>
-      <button onClick={toggleNameHandler}>Toggle & Delete Content</button>
+      <button onClick={toggleNameHandler}>List & Keys</button>
       {showPerson ? (
         <div>
           {personData.map((item, index) => {
