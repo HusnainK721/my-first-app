@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { IntroductionToStyledComponentChildF } from "./IntroductionToStyledComponentChildF";
-export const AddingAndUsingRadiumParentF = () => {
+export const IntroductionToStyledComponentParentF = () => {
   const defaultPerson = [
     { id: "khwaja3", name: "Rehan", age: 20 },
     { id: "khwaja1", name: "khwaja", age: 27 },
@@ -26,13 +26,13 @@ export const AddingAndUsingRadiumParentF = () => {
     setPersonData(newPersonData);
   };
   // Default css of button
-  const buttonStyle = {
-    backgroundColor: "lightgreen",
-    ":hover": {
-      backgroundColor: "lightyellow",
-      color: "black",
-    },
-  };
+  // const buttonStyle = {
+  //   backgroundColor: "lightgreen",
+  //   ":hover": {
+  //     backgroundColor: "lightyellow",
+  //     color: "black",
+  //   },
+  // };
 
   let person = null;
   if (showPerson) {
@@ -53,11 +53,11 @@ export const AddingAndUsingRadiumParentF = () => {
         </button>
       </div>
     );
-    buttonStyle.backgroundColor = "pink";
-    buttonStyle[":hover"] = {
-      backgroundColor: "black",
-      color: "pink",
-    };
+    //   buttonStyle.backgroundColor = "pink";
+    //   buttonStyle[":hover"] = {
+    //     backgroundColor: "black",
+    //     color: "pink",
+    //   };
   }
 
   //   const classes = ["para-color", "para-look"].join(" ");4
@@ -70,15 +70,11 @@ export const AddingAndUsingRadiumParentF = () => {
   //   classes.push("para-look");
   // }
   return (
-    <StyleRoot>
-      <div className="mt-2">
-        <p>3.Adding & Usng Radium </p>
-        <button onClick={toggleNameHandler} style={buttonStyle}>
-          Added Radium
-        </button>
+    <div className="mt-2">
+      <p>3.Styled Component </p>
+      <button onClick={toggleNameHandler}>Added Radium</button>
 
-        {person}
-      </div>
-    </StyleRoot>
+      {person}
+    </div>
   );
 };

@@ -10,7 +10,7 @@ export const IntroductionToStyledComponentChildF = (itemCurrent) => {
   //   },
   // };
   return (
-    <div className="person">
+    <div>
       <p onClick={itemCurrent.clicked}>
         my name is {itemCurrent.name} & i am 27 year old
       </p>

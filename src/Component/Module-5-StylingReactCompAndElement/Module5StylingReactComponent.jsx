@@ -10,6 +10,8 @@ import IntroductionToStyledComponentParentC from "./StylingReactInClass/D-Introd
 import { SettingStyleDynamicallyParentF } from "./StylingReactInFunctional/A-SettingStyleDynamicallyF/SettingStyleDynamicallyParentF";
 import { SettingClassNameDynamicallyParentF } from "./StylingReactInFunctional/B-SettingClassNameDynamicallyF/SettingClassNameDynamicallyParentF";
 import AddingAndUsingRadiumParentF from "./StylingReactInFunctional/C-AddingAndUsingRadium/AddingAndUsingRadiumParentF";
+import { IntroductionToStyledComponentParentF } from "./StylingReactInFunctional/D-IntroductionToStyledComponent/IntroductionToStyledComponentParentF";
+
 export const Module5StylingReactComponent = () => {
   return (
     <React.Fragment>
@@ -30,6 +32,8 @@ export const Module5StylingReactComponent = () => {
             <SettingStyleDynamicallyParentF />
             <SettingClassNameDynamicallyParentF />
             <AddingAndUsingRadiumParentF />
+
+            <IntroductionToStyledComponentParentF />
           </div>
         </Col>
       </Row>
