@@ -36,9 +36,7 @@ export const Landing = () => {
         <Module4ListAndConditional />
       </div>*/}
       <hr />
-      <div>
-        <Module5StylingReactComponent />
-      </div>
+      <div>{/* <Module5StylingReactComponent /> */}</div>
       <AllPractice />
       {/* <RadiumPracticeParent /> */}
     </React.Fragment>
