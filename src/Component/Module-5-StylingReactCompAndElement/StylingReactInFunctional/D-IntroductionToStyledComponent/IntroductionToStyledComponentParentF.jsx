@@ -1,6 +1,18 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 import { v4 as uuidv4 } from "uuid";
+
 import { IntroductionToStyledComponentChildF } from "./IntroductionToStyledComponentChildF";
+const StyledButton = styled.button`
+  background-color: salmon;
+  color: black;
+  border-radius: 2px 20px 2px 20px;
+  &:hover {
+    background-color: black;
+    color: salmon;
+  }
+`;
+
 export const IntroductionToStyledComponentParentF = () => {
   const defaultPerson = [
     { id: uuidv4(), name: "Rehan", age: 20 },
@@ -50,8 +62,8 @@ export const IntroductionToStyledComponentParentF = () => {
 
   return (
     <div className="mt-2">
-      <p>3.Styled Component </p>
-      <button onClick={toggleNameHandler}>Added Radium</button>
+      <p>4.Styled Component </p>
+      <StyledButton onClick={toggleNameHandler}>Styled Component</StyledButton>
 
       {person}
     </div>
