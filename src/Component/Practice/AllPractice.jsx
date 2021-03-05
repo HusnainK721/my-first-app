@@ -11,10 +11,24 @@ const AllPractice = () => {
         <h1>React Class Practice</h1>
         <h4>Counter Practice</h4>
         <CounterPractice />
+        <hr />
+        <hr />
+        <h4>MapFunctionPracticeParent</h4>
         <MapFunctionPracticeParent />
+        <hr />
+        <hr />
+        <h4>FetchingDataFromReduxParent</h4>
         <FetchingDataFromReduxParent />
+        <hr />
+        <hr />
+        RadiumPracticeParent
         <RadiumPracticeParent />
+        <hr />
+        <hr />
+        StyledComponentparent
         <StyledComponentparent />
+        <hr />
+        <hr />
       </div>
     </div>
   );
