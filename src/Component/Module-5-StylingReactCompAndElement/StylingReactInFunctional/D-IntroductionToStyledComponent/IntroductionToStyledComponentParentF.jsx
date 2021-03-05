@@ -52,15 +52,6 @@ export const IntroductionToStyledComponentParentF = () => {
     //   };
   }
 
-  //   const classes = ["para-color", "para-look"].join(" ");4
-  // OR
-  // const classes = [];
-  // if (personData.length <= 1) {
-  //   classes.push("para-color");
-  // }
-  // if (personData.length <= 2) {
-  //   classes.push("para-look");
-  // }
   return (
     <div className="mt-2">
       <p>3.Styled Component </p>
