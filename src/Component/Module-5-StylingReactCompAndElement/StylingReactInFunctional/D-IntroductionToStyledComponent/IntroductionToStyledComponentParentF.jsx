@@ -25,14 +25,6 @@ export const IntroductionToStyledComponentParentF = () => {
     newPersonData.splice(indexPerson, 1);
     setPersonData(newPersonData);
   };
-  // Default css of button
-  // const buttonStyle = {
-  //   backgroundColor: "lightgreen",
-  //   ":hover": {
-  //     backgroundColor: "lightyellow",
-  //     color: "black",
-  //   },
-  // };
 
   let person = null;
   if (showPerson) {
