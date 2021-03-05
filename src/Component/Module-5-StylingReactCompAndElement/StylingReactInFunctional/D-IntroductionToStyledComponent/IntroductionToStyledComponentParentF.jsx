@@ -45,11 +45,6 @@ export const IntroductionToStyledComponentParentF = () => {
         </button>
       </div>
     );
-    //   buttonStyle.backgroundColor = "pink";
-    //   buttonStyle[":hover"] = {
-    //     backgroundColor: "black",
-    //     color: "pink",
-    //   };
   }
 
   return (
