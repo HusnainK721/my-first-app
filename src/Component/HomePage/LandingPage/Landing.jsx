@@ -10,7 +10,7 @@ import { Module4ListAndConditional } from "../../Module-4-ListAndConditional/Mod
 import { Module5StylingReactComponent } from "../../Module-5-StylingReactCompAndElement/Module5StylingReactComponent";
 
 // All Practice Component Exported Here
-import AllPractice from "../../Practice/AllPractice";
+// import AllPractice from "../../Practice/AllPractice";
 
 export const Landing = () => {
   return (
@@ -22,9 +22,9 @@ export const Landing = () => {
         <RightNavigationSection />
         <FooterSection />
       </div> */}
-      <div>
+      {/* <div>
         <AllPractice />
-      </div>
+      </div> */}
       <hr />
       <div>
         <Module4ListAndConditional />
