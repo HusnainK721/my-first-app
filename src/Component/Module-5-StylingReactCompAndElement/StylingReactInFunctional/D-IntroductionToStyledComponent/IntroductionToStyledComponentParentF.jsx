@@ -1,15 +1,16 @@
 import React, { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 import { IntroductionToStyledComponentChildF } from "./IntroductionToStyledComponentChildF";
 export const IntroductionToStyledComponentParentF = () => {
   const defaultPerson = [
-    { id: "khwaja3", name: "Rehan", age: 20 },
-    { id: "khwaja1", name: "khwaja", age: 27 },
-    { id: "khwaja2", name: "Zahoor", age: 18 },
+    { id: uuidv4(), name: "Rehan", age: 20 },
+    { id: uuidv4(), name: "khwaja", age: 27 },
+    { id: uuidv4(), name: "Zahoor", age: 18 },
   ];
   const updatedPerson = [
-    { id: "khwaja4", name: " Md khwaja", age: 270 },
-    { id: "khwaja5", name: " Md Zahoor", age: 180 },
-    { id: "khwaja6", name: "Sk Rehan", age: 200 },
+    { id: uuidv4(), name: " Md khwaja", age: 270 },
+    { id: uuidv4(), name: " Md Zahoor", age: 180 },
+    { id: uuidv4(), name: "Sk Rehan", age: 200 },
   ];
   const [showPerson, setShowPerson] = useState(false);
   const [personData, setPersonData] = useState(defaultPerson);
