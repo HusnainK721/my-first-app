@@ -4,11 +4,11 @@ import { v4 as uuidv4 } from "uuid";
 
 import { IntroductionToStyledComponentChildF } from "./IntroductionToStyledComponentChildF";
 const StyledButton = styled.button`
-  background-color: ${(props) => (props.afterClicked ? "yellow" : "red")};
+  background-color: ${(props) => (props.alt ? "green" : "blue")};
   color: black;
   border-radius: 2px 20px 2px 20px;
   &:hover {
-    background-color: ${(props) => (props.afterClicked ? "red" : "yellow")};
+    background-color: ${(props) => (props.alt ? "red" : "yellow")};
     color: salmon;
   }
 `;
@@ -63,7 +63,8 @@ export const IntroductionToStyledComponentParentF = () => {
   return (
     <div className="mt-2">
       <p>4.Styled Component </p>
-      <StyledButton afterClicked={showPerson} onClick={toggleNameHandler}>
+      <h1> </h1>
+      <StyledButton alt={showPerson} onClick={toggleNameHandler}>
         Styled Component
       </StyledButton>
 
