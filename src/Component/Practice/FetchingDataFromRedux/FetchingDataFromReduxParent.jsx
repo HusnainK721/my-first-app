@@ -13,17 +13,40 @@ export const FetchingDataFromReduxParent = () => {
   }, [selector]);
 
   const [storedDataFromInputBox, setStoredDataFromInputBox] = useState();
+  const [uploadFiles, setUploadFiles] = useState();
+  console.log("upload files", uploadFiles);
   const dispatch = useDispatch();
-  const handleNewGroup = () => {
+  // function readFileDataAsBase64(e) {
+  //   const file = e.target.files[0];
+
+  //   return new Promise((resolve, reject) => {
+  //     const reader = new FileReader();
+
+  //     reader.onload = (event) => {
+  //       resolve(event.target.result);
+  //     };
+
+  //     reader.onerror = (err) => {
+  //       reject(err);
+  //     };
+
+  //     reader.readAsDataURL(file);
+  //   });
+  // }
+  const handleNewGroup = (e) => {
     dispatch(addNewGroup(storedDataFromInputBox));
   };
   return (
     <div>
       <div className="mt-2">
+        <input type="file" onChange={handleNewGroup} />
+        <br />
         <input
           type="text"
-          onChange={(event) => setStoredDataFromInputBox(event.target.value)}
+          onChange={(event) => setStoredDataFromInputBox(event.target.files)}
         />
+        <br />
+
         <button onClick={handleNewGroup}>Add Group</button>
       </div>
       <div>
