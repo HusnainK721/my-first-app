@@ -46,7 +46,7 @@
   text-decoration: none;
   outline: none;
   color: #000;
-  background-color: yellow;
+  background-color: gray;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
@@ -60,8 +60,8 @@
   text-align: center;
   text-decoration: none;
   outline: none;
-  color: #fff;
-  background-color: red;
+  color: black;
+  background-color:white ;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
