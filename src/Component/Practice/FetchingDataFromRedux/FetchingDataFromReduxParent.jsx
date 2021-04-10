@@ -4,6 +4,8 @@ import { useSelector } from "react-redux";
 import { getAllGroups } from "../../../State/Selector/groupSelector";
 import { useDispatch } from "react-redux";
 import { addNewGroup } from "../../../State/Action/groupActions";
+import { v4 as uuidv4 } from "uuid";
+
 export const FetchingDataFromReduxParent = () => {
   // const [postData, setPostData] = useState();
   const [groupData, setGroupData] = useState();
@@ -13,42 +15,47 @@ export const FetchingDataFromReduxParent = () => {
   }, [selector]);
 
   const [storedDataFromInputBox, setStoredDataFromInputBox] = useState();
-  const [uploadFiles, setUploadFiles] = useState();
-  console.log("upload files", uploadFiles);
-  const dispatch = useDispatch();
-  // function readFileDataAsBase64(e) {
+  // const [uploadFiles, setUploadFiles] = useState();
+  // const [showUplodFiles, setShowUploadFiles] = useState([]);
+  // const handleUploadFile = (e) => {
+  //   setShowUploadFiles(uploadFiles);
+
+  // e.preventDefault();
+  // const uploadFiles = e.target.files;
+  // const showUplodFiles = window.URL.createObjectURL(uploadFiles);
+  //   e.preventDefault();
+  //   const reader = new FileReader();
   //   const file = e.target.files[0];
+  //   if (file) {
+  //     reader.onloadend = () => this.props.onFileLoaded(reader.result);
+  //     setShowUploadFiles(reader.readAsDataURL(file));
+  //   } else {
+  //     alert("File uploaded is not valid.");
+  //   }
+  // };
 
-  //   return new Promise((resolve, reject) => {
-  //     const reader = new FileReader();
+  const dispatch = useDispatch();
 
-  //     reader.onload = (event) => {
-  //       resolve(event.target.result);
-  //     };
-
-  //     reader.onerror = (err) => {
-  //       reject(err);
-  //     };
-
-  //     reader.readAsDataURL(file);
-  //   });
-  // }
-  const handleNewGroup = (e) => {
+  const handleNewGroup = () => {
     dispatch(addNewGroup(storedDataFromInputBox));
   };
+
   return (
     <div>
       <div className="mt-2">
-        <input type="file" onChange={handleNewGroup} />
-        <br />
+        {/* <input type="file" onChange={(e) => setUploadFiles(e.target.files)} />
+        <button onClick={handleUploadFile}>send</button>
+        {showUplodFiles}
+        <br /> */}
         <input
           type="text"
-          onChange={(event) => setStoredDataFromInputBox(event.target.files)}
+          onChange={(event) => setStoredDataFromInputBox(event.target.value)}
         />
         <br />
 
         <button onClick={handleNewGroup}>Add Group</button>
       </div>
+
       <div>
         {groupData &&
           groupData.map((item) => {
